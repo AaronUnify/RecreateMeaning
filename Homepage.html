@@ -47,6 +47,35 @@ body {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
+  color: white; 
+}
+.fakeimg p {
+  color:black;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Text box light */
+.TextBoxLight {
+  background-color: #c7c7c7;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+}
+
+/* Text Box Dark */
+.TextBoxDark {
+  background-color: #333333;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+  color: #f0f0f0; 
 }
 
 /* Add a card effect for articles */
@@ -177,12 +206,23 @@ img {
 }
 
 
+
+
+
 }
 </style>
-
-
 </head>
+<!-- End of CSS -->
+
+
+<!-- Begin HTML -->
+
+
+
+
+
 <body>
+
 
 <div class="header">
   <h1>Recreate Meaning</h1>
@@ -191,20 +231,24 @@ img {
 
 
 
+<!-- Navigation Bar Begins -->
+
 <div class="navbar">
-  <a href="#home">Unify</a>
+  <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
   <a href="#news">Mediator</a>
-  <a href="#news">Podcast</a>
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
   <a href="#" style="float:right">About</a>
   <div class="dropdown">
    <button class="dropbtn">Social Media 
     <div class="dropdown-content">
-      <a href="#">Reddit</a>
-      <a href="#">Twitter</a>
-      <a href="#">YouTube</a>
+	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
    </button>
 </div>
-     <div class="dropdown">
+<!--     <div class="dropdown">
    <button class="dropbtn">Articles
     <div class="dropdown-content">
       <a href="#">Economics</a>
@@ -212,73 +256,84 @@ img {
       <a href="#">Philosophy</a>
       <a href="#">Psychology</a>
    </button>
+</div>-->
 </div>
 
-</div>
+<!-- Navigation Bar ends -->
 
-
-
-
+<!-- Article cards begin -->
 
 <div class="row">
   <div class="leftcolumn">
-    <div class="card">
-      <h2>On the Origin of Ideas...</h2>
-      <h5>A normal article, Jan 4, 2022</h5>
+
+
+   <div class="card">
+    <h2>On the Origin of Ideas...</h2>
+     <h5>A normal article, Jan 4, 2022</h5>
       <img class="center" src="https://epsilon.aeon.co/images/e3834109-1e24-49cc-a1e6-18afb619a443/idea_sized-dt5254.jpg" alt="" >
-								
+	<p><strong>Where do ideas come from?</strong><br><br>
+			Everyone knows that ideas come from social media, but where does social media get its ideas?</p>
+  </div>
 
-
-      <p><strong>Where do ideas come from?</strong><br><br>
-
-Everyone knows that ideas come from social media, but where does social media get its ideas?</p>
-    </div>
     <div class="card">
       <h2>Solving the Money Problem</h2>
-      <h5>The root of all evil?, Jan 5th, 2022</h5>
-
-<img class="center" src="https://uploads8.wikiart.org/images/ivan-aivazovsky/american-shipping-off-the-rock-of-gibraltar-1873.jpg!Large.jpg" alt="" >
-		
-
-      <p><strong>Money is a necessity for a unique pathway through life.</strong></p>
-      <p>Without it you find yourself on the well trodden path of financial scarcity, forced to devote a lifetime of attention and energy to the task of survival.</p>
-    </div>
+       <h5>The root of all evil?, Jan 5th, 2022</h5>
+	<img class="center" src="https://uploads8.wikiart.org/images/ivan-aivazovsky/american-shipping-off-the-rock-of-gibraltar-1873.jpg!Large.jpg" alt="" >
+         <p><strong>Money is a necessity for a unique pathway through life.</strong></p>
+          <p>Without it you find yourself on the well trodden path of financial scarcity, forced to devote a lifetime of attention and energy to the task of survival.</p>
   </div>
+  
+
+
+
+</div>
+
+<!-- Article Cards end-->
+
+<!--About Recreate Meaning-->
+
   <div class="rightcolumn">
     <div class="card">
       <h2>About</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Recreate Meaning is an attempt to restore the lost sense of grand meaning to life. We are trying to empower those who wish to live well, while trying to find our own way. </p>
+        <img class="center" src="https://i.imgur.com/01ycE85.png" alt="" >
+        <p>We are trying to empower those who wish to live well through technology assisted problem solving. <a href="https://twitter.com/Recreatemeaning">Read more...</a><br> </p>
     </div>
+
+<!--Popular/Related Posts-->
     <div class="card">
       <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><h4>Navigating Instability:</h4><p>Preparing for Shortages</p></div><br>
+      <div class="fakeimg"><h4>On the Origin of Ideas:</h4><p>Understanding algorithms</p></div><br>
+      <div class="fakeimg"><h4>The Money Problem:</h4><p>The Basics of Financial Strategy</p></div><br>
     </div>
+
+<!--Social Media Links -->
     <div class="card">
       <h3>Social Media</h3>
-  	<a href="#">Twitter</a><br>
-  	<a href="#">YouTube</a><br>
- 	<a href="#">Reddit</a><br>
+  	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
     </div>
+
+
   </div>
 </div>
 
+
+
+
+
+<!-- Footer --> 
 <div class="footer">
-
-
 <div class="navbar">
-  <a href="#home">Unify</a>
+ <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
   <a href="#news">Mediator</a>
-  <a href="#news">Podcast</a>
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
   <a href="#" style="float:right">About</a>
-
-
 </div>
+</div> 
 
-
-  </div> 
 
 </body>
 </html>
