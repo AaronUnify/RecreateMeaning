@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  color: white; 
+}
+.fakeimg p {
+  color:black;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Text box light */
+.TextBoxLight {
+  background-color: #c7c7c7;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+}
+
+
+
+/* Text Box Dark */
+.TextBoxDark {
+  background-color: #333333;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+  color: #f0f0f0; 
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+/*Top Navigation Buttons */
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+}
+
+
+
+
+
+
+
+/*IMAGE*/
+
+
+
+img {
+ 
+  height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ width: 400px;
+}
+
+
+
+
+
+}
+</style>
+</head>
+<!-- End of CSS -->
+
+
+<!-- Begin HTML -->
+
+
+
+
+
+<body>
+
+
+
+<div class="header">
+  <h1>Recreate Meaning</h1>
+  <p>Technology assisted problem solving. </p>
+</div>
+
+
+
+<!-- Navigation Bar Begins -->
+
+<div class="navbar">
+  <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+  <a href="#news">Mediator</a>
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="#" style="float:right">About</a>
+  <div class="dropdown">
+   <button class="dropbtn">Social Media 
+    <div class="dropdown-content">
+	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+   </button>
+</div>
+<!--     <div class="dropdown">
+   <button class="dropbtn">Articles
+    <div class="dropdown-content">
+      <a href="#">Economics</a>
+      <a href="#">Investing</a>
+      <a href="#">Philosophy</a>
+      <a href="#">Psychology</a>
+   </button>
+</div>-->
+</div>
+
+<!-- Navigation Bar ends -->
+
+
+
+
+
+<!-- Begin Article Headline and Preview -->
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>NAVIGATING INSTABILITY</h2>
+      <h5>This ones about the economy. 
+	  June 2021</h5>
+      <img class="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Compass_Card_B%2BW.svg/1024px-Compass_Card_B%2BW.svg.png" alt="" >
+								
+
+
+	<p><strong>What is to be done about the current instability? </strong><br><br>
+
+	 We must live as if the world has already ended.</p>
+
+
+<!-- End Article Headline and Preview -->
+
+
+<!-- Begin Article body  -->
+<br>
+It seems that it was only the other day, machines powered by steam revolutionised England. Altering the lifestyles and living situations of just about every human on earth. Just a quick century later and here we go again, everything is set to change and we better do what we can to navigate this transition smoothly.
+
+<br><br>
+Right of the bat, it seems our modern cities have fallen prey to one of the systemic risks they generate. For decades, highways have funneled people from rural areas into the closest metropolis. Now we have a disease spreading throughout the cities that make sharing your daily routine with 5,000 strangers unwise. For some of you, the city is home, and leaving is impossible. For the rest of you, let's get out as quickly and quietly as we can before the rural properties get too expensive.
+<br><br>
+I keep thinking thank god all this has happened after the internet has become established. Access to information and the ability to communicate with people anywhere and anytime. What an insane advantage over the people of the previous century.
+<br><br>
+But before we move on I should address the elephant in the room. I'm not going to make this article about Covid, but I have to mention it. Mostly because, I've been crazy forever, now I'm like low-level paranoid. Just when I started to accept that I was going to have to deal with shaking hands and hugs with acquaintances, it all got deleted from the social behaviour repertoire. Now if you try to shake someones hand, you're the weirdo.
+<br><br>
+I don't mean to be flippant about it. I think covid is a legitimate virus and a proper threat. But I also think we must remain vigilant against those who use a crisis for their own gain without concern for others. Problems of human evil and opportunistic behaviour aside, balancing panic and complacency regarding this virus is extremely difficult for groups of strangers.
+<br><br>
+Currently, one individual can cause a lockdown if they're not careful. The level of panic and paranoia required to stop the spread is unsustainable. There are too many fail-points to realistically expect the lockdowns to stop.
+<br><br>
+This is going to make our cities increasingly uncomfortable places to live. The thing that makes this virus annoying is the constant social signalling that accompanies it. I don't want to try to convince strangers I'm free of the disease everywhere I go. I'll do it, but I really don't enjoy it. I'm holding out for the vaccines to slow the spread. After that, I'm hoping we're done with the constant hand sanitizer and never coughing too loud.
+<br><br>
+Yes, vaccines should cause some relief from Covid, but they're not the silver bullet we hoped. I'm hearing reports that you can still be infected if you've had the vaccine, but your immune system has a headstart, so the sickness is less likely to kill you. So the vaccines aren't perfect but they help, seems like a good enough deal to me because I don't want to die unnecessarily.
+<br><br>
+The final thought regarding Covid is that if society-wide masks, hand sanitiser, lockdowns, social-distancing, quarantine and vaccines are insufficient to stop the spread, then that means you're getting Covid at some point.
+<br><br>
+Pray you catch a gentle variant, but until then don't ignore that it's on its way to you. Get your vaccination, then do everything in your power to make sure you're fit and healthy when your turn to be sick comes around, it's one of the few things that seems to be helping people recover.
+<br><br>
+It's a respiratory illness, so prepare with some cardio. Also, try not to be malnourished when you get it, your bodies going to need resources to fight the disease. Alright, lets leave it there with the Covid talk.
+
+<br><br><br><br>
+
+<p style = "text-align:center;">-----------------------------------------------------</p>
+
+
+<br><br>
+<br><br>
+We've got plenty on our plate if we're going to prepare for future crises as well as prepare for where the general economic trends are taking us.
+<br><br>
+Let's make a note on disease in general. Population density is every virus's best friend, not just Covid. Covid probably isn't the last or worst virus we'll see. I'm reading it as a signal that it's time to seriously get prepared for what the future has to offer when it comes to disease.
+<br><br>
+Before 2020 there were concerns that the excessive use of hand-sanitiser, anti-bacterial cleaners, and anti-biotics was a recipe for the evolution of super diseases. It was considered by some that hand-sanitiser should be outlawed, every hospital should be torn down and rebuilt entirely every 10-years and we should minimise our use of anti-biotics. If these people are right, then the hospitalisation of society was an error of systemic proportions.
+<br><br>
+Population density is no longer a friend. It's easier for a virus to spread when there are more hosts within reach. This is why I'm thrilled the internet allows us to connect to each other in real-time without the need for physical space.
+<br><br>
+Many jobs previously bound to a physical space have become bound to virtual space. Some workers' sole job is to maintain the infrastructure of the virtual space. Specialised workers can now live anywhere, so long as their contribution to the virtual space continues uninterrupted.
+<br><br>
+Even some workers who lack special qualifications and unique abilities have been working remotely. I'm worried for them because employers have the incentive to recruit from nations without minimum wage laws or replace people with machines.
+<br><br>
+I read an article by one of the banks, celebrating the addition of hundreds of artificial employees, during the pandemic. These artificial employees were actually just tasks, once divided amongst their workforce that had been entirely automated during the pandemic. The automation of the task was then assigned an employee code and given a name.
+<br><br>
+The main takeaway from the article is that they're automating tasks and being super weird about it. I think the PR team edited something that the software development team wrote.
+<br><br>
+It is likely that now these tasks have left human hands, they're not coming back. 1,000's of jobs in one sector gone. Don't be mad at the people for automating things that can be automated. But, don't sit back and let the times leave you behind because you imagine there is a time when you will work alongside these virtual employees. For many of us, these robots are a competitor for entry-level jobs.
+<br><br>
+If you're an average student who doesn't interview well, you got some trouble ahead. Don't bank on a job with one of the institutions. If it's not already true, it's soon to be the case that there isn't anything in a large corporation or government department for you. I've been living in this trouble for a couple years now and it's not so bad.
+<br><br>
+It seems very unlikely that in a post-pandemic world (if that ever happens) the entire workforce will return to their offices. Instead, things will be scattered or automated. With our technology, that's probably the way things should be. But as people we need to be prepared for the changes this will bring.
+<br><br><br>
+
+
+  <div class="TextBoxLight">
+
+		<h3>Trend(s) #1: People are changing jobs and locations</h3>
+			<p>
+				1. At the beginning of the pandemic a bunch of people lost their jobs all at once <br>
+2. Companies accelerated the automation of jobs<br>
+3. Everyone who could work from home did work from home<br>
+4. The housing market outperformed the apartment market most places<br>
+5. Threats of widespread shortage entered the public consciousness<br>
+			</p>
+
+	</div>
+
+
+
+
+
+
+
+<br><br>
+It is not clear whether or not we will see a deceleration of these trends. The job losses seen at the beginning of the pandemic are only a small fraction of the job losses we'll see due to automation.
+<br><br>
+My fingers are crossed that new jobs will emerge to replace the ones that are automated. But my intuition tells me this is a tipping point of sorts. I think we're approaching a time where for those of us on the outside of stable professions if you want to work, you just go do it and figure it out as you go. You can't wait for a company to sanction your efforts with their brand. It's becoming increasingly uneconomical to pay an institution to give you a certificate in exchange for $50,000.00. Hopefully, we get good jobs, but as the good jobs are getting harder to come by, we're going to need to figure out how to look after ourselves in their absence.
+<br><br>
+
+
+<a href = "https://github.com/AaronUnify/Contracts_test_3/blob/main/Contractor_Agreement.html">Contractor Agreement</a><br>
+<a href = "https://aaronunify.github.io/Contracts_test_3/Invoice.html">Invoice Generator</a>
+
+<br><br><br>
+If you're on the outside, think of a task you can do to provide value to someone, ask politely if they are willing to pay you to do it then write an agreement to make the details of the deal clear. After you finish the task present them with an invoice. Now you're pretty much a business. Remember if you start making some real money, don't forget to tell the government at some point, or else you'll probably go to jail for tax evasion.
+<br><br>
+As for the other trends, just about everyone wants to work from home as much as possible, I don't see a reversal here. Houses in my area remain in high demand house prices march forward to all-time highs every other week.
+<br><br>
+The biggest concern is the threat of shortages. I don't think we've seen the end of shortages. We can't easily predict what will be unavailable and for how long. So our best option is to prepare for the worst.
+<br><br>
+
+
+
+
+
+
+
+
+<div class="TextBoxDark" >
+
+		<h3>Strategy #1: Wear your seat-belt in every possible way </h3>
+			<p>
+				1. Expand your skillset with as many skills as possible. <br>
+2. Hold an inventory of supplies where possible. <br>
+3. Keep several months of living expenses in cash. <br>
+4. Own some of the tools and equipment required for you to survive and trade. <br>
+5. Know your customers and generate surplus value. <br>
+
+			</p>
+
+	</div>
+
+
+
+
+
+
+
+
+<br><br>
+When things go wrong, they can really go wrong. It's not nice to think of your workplace or hometown being devastated by a future crisis. But it's guaranteed that a future crisis will devastate somewhere, often entire nations at once. It may be us up next so we should prepare. If we don't prepare, it'll be much worse.
+<br><br>
+
+
+Because we can not predict what supply chains will be disrupted and when we must use our own lives to estimate our need for certain products and prepare accordingly. If there is a product that you absolutely must have, be sure to hold a little extra if possible. But aside from specifics, the following is a rough guide to being resilient to shortages.
+
+<br><br>
+
+
+
+
+
+
+
+
+<div class="TextBoxDark" >
+
+		<h3>Strategy #2: Prepare for Shortages</h3>
+			<p>
+				1. Food and supplies: Long-life food, house supplies, garden beds, a place for fishing, laying chickens, a place to hunt.<br>
+2. Skills: Learn to build furniture, repair vehicles, make clothing, butcher fresh meat, catch fish, care for crops.<br>
+3. Equipment: A ute, power tools, fishing rod with tackle, a gun or bow.<br>
+4. Resources: lumber, steel, plywood, corrugated iron, chicken wire, paint, bolts, screws, nails, glue, etc.<br>
+5. Cash: Good for income shortages.<br>
+6. At least one solar-powered powerpoint, and a water tank.<br>
+			</p>
+
+	</div>
+
+
+
+
+
+
+
+
+<br><br>
+
+Why this list? Why not masks, sanitizer, and toilet paper. The things that actually were difficult to get your hands on during the pandemic. Because we are not preparing for the current pandemic. We're aiming to prepare for things that could go wrong in the future.
+<br><br>
+Foods, the big one. Mainly because most of us are clueless as to how to produce it. Let alone the fact that city and suburban life are poor places for actually producing food. The final big concern is that it takes time for plants and animals to grow. That's why I brought up being aware of the local places to hunt and fish.
+<br><br>
+Should food go to zero tomorrow, we have some major hurdles to jump. So, stock up a little, get some plants in the ground now, start raising chickens, know where to find the animals and what to do with them if you catch them. Make the effort now because if things go bad and you go straight to cannibalism, it's going to make us all look bad on the international news.
+<br><br>
+Homegrown food tends to be healthier than a lot of the food available at the store. Plus it's satisfying picking your own crops and chickens can be nice little garden buddies.
+<br><br>
+If you've never really fixed or built anything, now would be the time to learn. Start with the current things that need to be fixed around you and go from there. Starting from no experience, you can be handy with 12 months of effort. The fine folks on YouTube will guide you. You just need some tools.
+<br><br>
+The 18v power tool ranges are incredible. AEG, Makita, Dewalt ect. All seem to be crushing it. Each company has a range that will allow just about anything to be built and repaired. If this is foreign to you, go to Bunnings or your local hardware and check it out.
+<br><br>
+I would like to give a shoutout to the Ozito PowerX range. Most of the tools are between $50-100 and the quality is far above expectation.
+<br><br>
+The good thing about tools is that you can purchase attachments for tools that perform multiple tasks. A drill can punch holes of varying sizes, and drive screws. What you may not know is that with the right attachment a drill can also, cut sheet metal, pump water, dig holes, harvest microgreens, polish, scrub and tighten and loosen bolts. The list goes on.
+<br><br>
+The same battery that powers the drill can usually power a whole range of power tools. Saws, angle grinders, sanders, spray guns, nail guns, compressor, planer, etc. Nearly all the tools have multiple uses. Bradguns shoot both nails and staples, spray guns spray paint and varnish, saws cut wood and steel.
+<br><br>
+The same battery can also power, lawnmowers, hedge trimmers, chainsaws, whippersnippers, leafblowers. As well as power a range, lights, radio, BlueTooth speakers, vacuums and 5v USB power.
+<br><br>
+The 5v USB charging attachments that connect to the 12v battery mean that your power tool batteries can charge/run any USB equipment including mobile phones.
+<br><br>
+18v Powertool batteries can be charged using a solar setup that will cost about $350.00 from a store like Jaycar. The same solar setup can be used to power most home appliances that plug into the wall however, the battery life is going to be the killer here. A more substantial solar setup is required to power the big stuff in a house like hot water, fridge, washing machine, etc.
+<br><br>
+Depending on the price of power in your area and your needs you may consider running a portion of your power with an off-grid setup. Consumers no longer need to accept raising energy costs without having options.
+<br><br>
+Having access to tools and power in any situation would help you keep things together in the event of a major crisis. This will allow you to fix a wide array of problems while minimising the need for outside assistance. It may even allow you to be the outside assistance for other people.
+<br><br>
+Protecting others from taking the brunt of the crisis is the best way to minimise the long-term effects of a crisis.
+<br><br>
+
+
+
+
+   <div class="TextBoxLight">
+
+		<h3>
+Trend #2: If you can't beat them... </h3>
+			<p>
+				1. Many of the people with assets had their net worth increase during the pandemic<br>
+2. Many of the people with debt were sheltered by the government<br>
+3. Many of these were the same people<br>
+4. Most property owners are leaving the pandemic richer than when it began due to increases in property values.<br>
+
+			</p>
+
+	</div>
+
+
+
+
+
+
+
+<br><br><br>
+
+
+
+
+<div class="TextBoxDark" >
+
+		<h3>Strategy #3: ... join them </h3>
+			<p>
+				
+1. Save around $25,000.00 cash<br>
+2. Go to bank and ask for home loan<br>
+3. Get rejected for some reason, but don't give up!<br>
+4. Address reasons you can not purchase<br>
+5. Purchase house. <br>
+			</p>
+
+	</div>
+
+
+
+
+
+
+
+
+<br><br><br>
+
+Based off of some of my interactions in the real world I sense that some people may think that one was insensitive. I am aware of the counterarguments, I've been paying attention to them for years.
+<br><br>
+In some places, the property market is completely unaffordable for first home buyers. But there are $100,000 houses in Rural Queensland. Surely some of you who work online might be interested in those.
+<br><br>
+Back to the unaffordableness of property. I saw a 2-bedroom apartment in Sydney for $619,000.00 that would cost $260,000.00 in Brisbane. $26,000 in cash, a job in hospitality, and a meeting with a clever mortgage broker will get you that Brisbane apartment. I wouldn't bother with even trying to get the Sydney apartment.
+<br><br>
+The next important thing. If you buy that Brisbane apartment and the property prices here rise to be on par with the property places in Sydney and Melbourne you'll make ~$400,000.00 profit. In Australia, owner-occupied properties are exempt from capital gains tax. So if you were living there that's your money.
+<br><br>
+Now, this is where some people start freaking out about being tied down to a specific place. So I'll tell you the big sacrifice you have to make. If you live in the property for 6-months, you're exempt from capital gains for the following 6 years.
+<br><br>
+So you can buy a place, swap your rent payment for a mortgage. By the way, the repayments on a $250,000 mortgage are about $217.15 a week. Live there for 6 months, then begin renting it out. The current market rate for the apartments I'm looking at is about $300.00 a week. Use the rent to pay the Mortgage + Expenses for the next 5 years. Then you can sell and pocket any gains without having to pay tax.
+<br><br>
+I know that you might be thinking, this is all well and good but I want to live in a house, not an apartment. So, let me tell you another thing. As your apartment increases in value, you build equity with the bank. Once your mortgage is worth less than 80% of the value of the property, you can access that money in the form of equity. Equity can be used as a deposit for a house.
+<br><br>
+So to buy an apartment for $250,000.00, you'll need a $25,000.00 deposit. That deposit will pay about $15,000.00 off the mortgage and about $10,000 will go to fees.
+<br><br>
+Your left owing $235,000.00 on a property valued at $250,000.00. If the property increases in value to $300,000.00 then you will have $15,000.00 in equity. This equity is now the beginnings of your house deposit. Any money you pay off the mortgage or further increases in property value represents equity.
+<br><br>
+Once you have a deposit sufficient to purchase a house for about $450,000.00, you can rent out the apartment, collect $15,000 in rental income each year, and begin your 6-years of capital gains exemption. Hopefully, things go well and you manage to survive the 6-years by navigating the pitfalls of career, love, health, and just life in general.
+<br><br>
+After 6-years, you can sell your apartment, if you wish. Maybe, you get a Sydney/Melbourne price. But let's just meet in the middle and say you get $400,000.00. You can use this money to pay off the remaining mortgage on the apartment. Which should be $205,000.00 if you were paying the minimum at the current rate. The remaining $195,000 can be used to pay the house mortgage, down to $200,000, the loan can be refinanced and you're left with a house that has a mortgage payment of $217.15 per week.
+<br><br>
+This strategy can be adapted to meet your needs but, what I wrote is what I'd do. Sure there'll be ups and downs. But there will be ups and downs, in every strategy. Dealing with banks, real estates, tenants, body corporates, the ATO, etc can take a toll but all-in-all properties are a good deal in this country.
+<br><br>
+So back to basics, All it takes is saving $100 a week for 5 years ($200 for 2.5 years, $400 for 1.25 etc.) to get your $25,000.00 and then off you go. If you can't do it right now, okay. So long as you're making an effort to get yourself sorted, there's no judgment from me. I've delayed years of progress in my own life at times because I wanted to get on top of my mental health by finding meaning in life. Just try not to spend too long trying to find it in Skyrim.
+<br><br>
+But if you say you can't do it ever, you really need to think about that, where does that leave you in 10 years? Besides, I'm hoping anyone who read this far wants to do difficult things if they're worthwhile. Buying property tends to be worthwhile. It's one of the safest and easiest solutions to the money problem.
+<br><br>
+That being said it's easier to buy property if you're partnered with someone, so you may need to solve the love problem (no article yet, I'm working on it). While you're working on that I would make sure you find your sense of meaning to avoid feeling like you're swimming upstream. If you haven't done these things already, I'll just wait here for you to get back and we'll finish the article.
+<br><br>
+
+
+
+
+
+
+
+<div class="TextBoxDark" >
+
+		<h3>Strategy #4: Prepare</h3>
+			<p>
+			
+Using Real-Estate to Fortify Society<br>
+<br><br>
+1. Purchase house. <br>
+2. Install solar power and water tank. Build garden beds, plant fruit trees, raise chickens.<br>
+3. Fill workshop with tools for servicing and repairing vehicles, and building furniture and homewares.<br>
+4. Pay down your mortgage. Loans can be refinanced to have lower weekly repayments so long as the principal has decreased.<br>
+			</p>
+
+	</div>
+
+
+
+
+<br><br>
+
+
+
+This setup will have you prepared for a variety of crises. Increased security can be gained by purchasing land and establishing an off-grid cabin. If you're outdoors inclined and want some space for the family (or future family) and a chance to test your building and farming skills, setting up a home away from home might be the thing to do with some of that property equity.
+<br><br>
+This is one of the rare occasions when it's sensible to buy a gun, a tractor, and listen to country music. Before this article becomes about another thing, I'm going to stop typing about it.
+<br><br>
+Let's consider how we can survive a more temporary economic crisis.
+<br><br>
+
+
+
+
+
+<div class="TextBoxDark" >
+
+		<h3>
+Strategy #5: Survive at all costs</h3>
+			<p>
+				1. Rent out any spare rooms<br>
+2. Refinance mortgage to lower costs<br>
+3. Eat homegrown as much as possible<br>
+4. Do any extra work possible*<br>
+5. Use equity to cover expenses if necessary<br>
+6. Refinance as an interest-only loan and rent out your house if necessary.<br>
+<br><br>
+*Also, swapping to an interest-only loan is possible in some places. This can massively reduce weekly costs.
+			</p>
+
+	</div>
+
+
+
+
+<br><br>
+
+
+Our current economy outsources the manufacturing of products to unknown outsiders. Good when you're the manufacturer because you can rely on supply chains to deliver your products to unknown customers. Being able to scale up production without needing to operate 1000's of stores and meet millions of customers is a lifesaver for introverts.
+<br><br>
+But in the future economy, this may be less possible. Perhaps even with periods where interacting with the economy becomes impossible.
+<br><br>
+A good example was when the shipping rules were updated in response to Covid. Ships were waiting offshore to unload for a while to quarantine. In China, this was enough to cause a shortage of shipping containers. This really means we all had a shortage because China makes a bit of everything. After that, the ports had outbreaks of Covid slowing things further.
+<br><br>
+Other ports should have been able to pick up the slack but it takes time to alter the entirety of global shipping. The deployment of millions cannot be improvised, without delay and disaster. At the same time, there was the ship that got stuck in the Suez canal. I'm not sure what the ramifications of these events will be but the global shipping industry is starting to look like the end of a game of Jenga.
+<br><br>
+Although unlikely, the entirety of global shipping collapses, the global forces can intersect with local events causing some to feel the blow more than others. Because of a combination of reasons, shipping prices have increased 10-fold in many places.
+<br><br>
+Shipping isn't the only way that goods are transferred but a slowdown in shipping coupled with a price increase can be enough to temporarily cripple a town, city, or entire economy. Remember too that Covid, hasn't gone away and it doesn't just affect shipping.
+<br><br>
+But covid isn't our only concern anyway. Recent outbreaks of violence in South Africa have demonstrated the damaging effect of political instability on the economy.
+<br><br>
+An increase in violence led to dairy farmers being unable to offload their milk in a timely and safe manner, instead, they opted to pour out many 100,000's of liters. The loss of so many calories has contributed to the famine in society and increased the levels of violence. This has made the highways unsafe and the dairy farmers can no longer get feed delivered for their cattle.
+<br><br>
+If the cows starve, they will stop producing milk and eventually die. This means that the milk supply will take a long time to return to normal, in the meantime, everyone will have to pay higher prices, potentially for years.
+<br><br>
+That's just for milk, there will be many unexpected and long-lasting consequences to the current violence in South Africa. The loss of human life to political violence and unnecessary famine is too big a tragedy for me to quantify in this article let alone process. I don't view these tragedies as far off things that our society is beyond.
+<br><br>
+Our best chance to prevent this from happening here is to prepare for it. Reinforcing our society at the household level provides support for when industry and government stumble. Potentially meaning the difference between not having milk for a few days, not having affordable milk for a few years, or the preservation of law and order.
+<br><br>
+
+
+
+
+
+   <div class="TextBoxLight">
+
+		<h3>Trend #3: Big Macs are more expensive</h3>
+			<p>
+				
+1. Eating at a restaurant, takeout, and groceries have all increased in price<br>
+2. Many food-related commodities are trading at an all-time high<br>
+3. Additional inputs to food production, such as energy derived from oil are trading at highs<br>
+4. Shipping is delayed and more expensive.<br>
+
+			</p>
+
+	</div>
+
+
+
+
+
+
+
+<br><br><br>
+Concerns about future viruses and political troubles aside, I have a secondary reason for suggesting that we all begin to take part in the production of our own food. Food is becoming a lot more expensive due to inflation and commodity prices. Economists in the reserve bank are currently debating whether or not inflation has got out of hand. Their current data makes it appear that there hasn't been inflation out of line with their targets.
+<br><br>
+This has become a somewhat foolish debate as anyone who does the groceries for their household will have noticed that food is more expensive now than it was 3 years ago. Another thing that an observer may have noticed is that property prices have increased massively across the same three-year period. So if food and housing are more expensive, who cares what the actual inflation numbers indicate, everyday life feels more expensive because things cost more.
+<br><br>
+Inflation only represents the average of the increases and decreases in the price of goods in the economy. Some goods and services increase in price more than others, it can be tempting to assume 2% inflation means a stable 2% increase in the price of all goods. If that were the case an increase in the price of the inputs of production such as materials and labour should result in an increase in the price the customer pays for the output. The increased cost of labour results in higher wages, meaning everyone could still afford the outputs. But the reality is more volatile.
+<br><br>
+All physical goods are dependent on commodity prices. Commodity prices are governed by supply and demand, and in the last 12 months Just about everything went up massively (even coal). For some commodities, this makes sense, as many people cut back on consumption in 2020, so a return to regular consumption would present itself as a big price increase. But some commodities, particularly related to food are trading at all-time highs.
+<br><br>
+Prices are governed by supply and demand. Most of the goods on the shelves in supermarkets are made from combinations of food commodities. The people who transform the raw commodities into products can lower their costs by changing recipes to take advantage of cheaper inputs and minimise using expensive inputs. They can also alter their methods of production to reduce costs.
+<br><br>
+Changing prices may cause consumers to choose to purchase different products than usual, which has an additional effect on prices. The result of higher commodity prices will be a generalised price increase, with shoppers filling their baskets with different goods than usual.
+<br><br>
+So what's going to happen? Ideally, more supply will come online while existing producers reduce costs by becoming more efficient. Eventually, all going well we reach a new equilibrium and prices stabilise at an affordable level until the next crisis.
+<br><br>
+So why does it matter? There may be temporary shortages while we refind equilibrium. Having food at home, as well as the ability to produce food could make all the difference. Your other bills won't disappear in a crisis, having to pay extra for food may be the difference between being able to own your second property.
+<br><br>
+I know you're probably thinking that if you had to, you would just work extra hours to make up the difference in expenses. That will work for some people but we can't all run that strategy at the same time, it just doesn't work. Increased prices mean fewer customers for most industries. You are more likely to lose hours when there are price increases, not gain. Although a loss of several hours a week is desirable compared to reality.
+<br><br>
+In a crisis, many unfortunate people will suddenly have their employment cut. We saw this at the beginning of Covid. In just two weeks in 2020, in the US, 9.9 million people applied for unemployment payments because they had suddenly lost their job.
+<br><br>
+It was not clear what level of crisis Covid would be at the time and it just goes to show how fragile employment can be during a crisis. Remember from earlier many of these people's jobs will have been automated during the crisis, so it's not just a temporary blip for these people. It's an unexpected career and lifestyle change.
+<br><br>
+As a homeowner, it's best to be prepared for future crises because losing your home could be financially devastating, especially if it's your major asset. On top of being prepared to produce food at home, purchasing insurance for income protection, life insurance, etc, is probably a good move.
+<br><br>
+
+
+   <div class="TextBoxLight">
+
+		<h3>Trend #4: Sudden unemployment and closures</h3>
+			<p>
+				
+1. When Covid was announced many were suddenly unemployed<br>
+2. Some businesses closed doors immediately<br>
+3. Other businesses have been choked to death by the new restrictions<br>
+4. The successful adaptation to the new economy of some businesses will kill others<br>
+
+			</p>
+
+	</div>
+
+
+
+
+
+
+
+
+<br><br><br>
+The best kind of job in a crisis is where the customers are already lined up and willing to pay. To have this kind of access to the crisis market you need to have skills, tools, and customers. Best to get these before the crisis begins. Owning useful equipment like power tools, a ute and materials are also important. The more successful jobs you've done for people before the crisis, the greater the chance of finding work during the crisis. Should the world be ending while you're reading this and you need a desk, I'm your man.
+<br><br>
+In a crisis, people want reliable, cheap, and quick fixes to their problems, with known prices. If you can keep things running for people and tell them a price upfront, they'll be happy. You should charge for your time, effort, and materials to keep yourself secure and able to continue being productive, but you should not price gouge. Lest your greed turns us into a wasteland.
+<br><br>
+Being prepared to go straight to work without your workplace can help you capture some stability should your boss suddenly have to close doors. If possible, you may as well complete the jobs, for the customers who have already arranged to have the work done.
+<br><br>
+That'll do, I think this writing this article has increased my resting heart rate by a few bpm. This article may have sounded crazy to some. Whatever your opinion, I saw what Covid did to the supply chains and I don't want to hold out for the next catastrophe before I begin to prepare. No matter what the future brings, you can expect that it won't be the same as the current system.
+<br><br>
+ </p>
+
+
+
+
+
+
+
+
+</div>
+</div>	
+<!-- End Article-->
+
+
+
+<!--About Recreate Meaning-->
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About</h2>
+        <img class="center" src="https://i.imgur.com/01ycE85.png" alt="" >
+        <p>We are trying to empower those who wish to live well through technology assisted problem solving. <a href="https://twitter.com/Recreatemeaning">Read more...</a><br> </p>
+    </div>
+
+<!--Popular/Related Posts-->
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><h4>Navigating Instability:</h4><p>Preparing for Shortages</p></div><br>
+      <div class="fakeimg"><h4>On the Origin of Ideas:</h4><p>Understanding algorithms</p></div><br>
+      <div class="fakeimg"><h4>The Money Problem:</h4><p>The Basics of Financial Strategy</p></div><br>
+    </div>
+
+<!--Social Media Links -->
+    <div class="card">
+      <h3>Social Media</h3>
+  	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer --> 
+<div class="footer">
+<div class="navbar">
+ <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+  <a href="#news">Mediator</a>
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="#" style="float:right">About</a>
+</div>
+</div> 
+
+
+</body>
+</html>
+
+
+

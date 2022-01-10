@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  color: white; 
+}
+.fakeimg p {
+  color:black;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Text box light */
+.TextBoxLight {
+  background-color: #c7c7c7;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+}
+
+/* Text Box Dark */
+.TextBoxDark {
+  background-color: #333333;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+  color: #f0f0f0; 
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+/*Top Navigation Buttons */
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+}
+
+
+
+
+
+
+
+/*IMAGE*/
+
+
+
+img {
+ 
+  height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ width: 400px;
+}
+
+
+
+
+
+}
+</style>
+</head>
+<!-- End of CSS -->
+
+
+<!-- Begin HTML -->
+
+
+
+
+
+<body>
+
+
+
+<div class="header">
+  <h1>Recreate Meaning</h1>
+  <p>Technology assisted problem solving. </p>
+</div>
+
+
+
+<!-- Navigation Bar Begins -->
+
+<div class="navbar">
+  <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+  <a href="#news">Mediator</a>
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="#" style="float:right">About</a>
+  <div class="dropdown">
+   <button class="dropbtn">Social Media 
+    <div class="dropdown-content">
+	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+   </button>
+</div>
+<!--     <div class="dropdown">
+   <button class="dropbtn">Articles
+    <div class="dropdown-content">
+      <a href="#">Economics</a>
+      <a href="#">Investing</a>
+      <a href="#">Philosophy</a>
+      <a href="#">Psychology</a>
+   </button>
+</div>-->
+</div>
+
+<!-- Navigation Bar ends -->
+
+
+
+
+
+<!-- Begin Article Headline and Preview -->
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>About Recreate Meaning</h2>
+       <h5>The rate at which events that alter our daily experience are occurring has increased. <br> Jan 10, 2022</h5>
+        <!-- <img class="center" src="https://i.imgur.com/01ycE85.png" alt="" > -->
+								
+
+
+
+
+<!-- End Article Headline and Preview -->
+
+
+<!-- Begin Article body  -->
+
+
+
+
+
+<br><br>
+<div class="TextBoxDark">
+
+ <h3>Recreate Meaning Vs. Unify</h3>
+  <p>
+Recreate Meaning is the name of the company, Unify is the name of our first product, an app to help direct your attention away from societal level events towards the individual level. The website you are currently on is the portal to all our apps, articles, podcasts, and social media. Below is a part of my justification for what I'm doing. 
+  </p>
+
+</div>
+
+<br>
+
+
+
+<p> If there was any doubt, I think the events of 2017-2021 should have made it clear. The rate at which events that alter our daily experience are occurring has increased, which is to say time is accelerating. 
+<br><br>
+Technology, the media, and trade have increased the connectedness of the world. Technological extensions of our senses allow us to see, hear, and voice opinions on situations happening elsewhere in real-time. This has led to an acceleration of the generation of complex events that dominate our attention and change our daily lives. The complexity of these events surpasses our ability to process the meaning of the situation naturally. 
+<br><br>
+We can experience so much thanks to the technological enhancement of our senses. Unfortunately, the sheer quantity of this experience comes in the form of a narrative, often crafted and carefully controlled to fit another's agenda. Increasingly the human experience is transforming from participating in a social narrative through our bodies and roles in society, into participating in a global narrative by consuming media and critiquing the actions of others. 
+<br><br>
+Disconnecting the world doesn’t seem to be entirely appropriate as a response to this problem. Instead of disconnecting, I propose that there is a bottleneck that once we identify and remove the system will shed its pathology. I have attempted to resolve this bottleneck by developing technology to increase the rate at which individuals can process events as close to the natural process as possible. I suspect the main reason the media can dominate most peoples attention is that it appears to offer clarity. Clarity provides relief for an anxious society because clarity allows for the re-implementation of strategy and long-term thinking. However, the clarity offered by the media is watered down and unlikely to be relevant to your personal situation. If clarity must be obtained in locality first, so that local events may become the primary driver of interest. 
+<br><br>
+Also, not to be alarmist but please remember, time is still accelerating. The political situation is only beginning to get crazy and new diseases that are adapted to our modern society and lifestyle are still emerging. Technological development has accelerated to the point where advancing fields have long stopped integrating each other's tools and understanding. Increasingly bizarre and novel technology that shocks tech experts and leaves regulators in the dust is just another symptom of the acceleration of time. 
+<br><br>
+Information Obesity is an emerging condition in world where attention is the scarcest resource. Generating resources and learning new skills keeps us pretty busy. The last thing you need in the 15 second moments in between is to be jamming flashes of US politics into any excess space in your consciousness. 
+<br><br>
+It’s also undesirable to be connected to people who think the current social media storm is the only worthy topic of conversation. Instead of a conversation you have a Facebook comments section. 
+<br><br>
+As a rough estimate time has accelerated such that every 5 years of development in modern times is worth 50 from the previous 500 years. 
+<br><br>
+
+
+<div class="TextBoxDark">
+
+ <h3>Normal is outdated</h3>
+  <p>
+500 years ago, my ancestors did not know that the continent I currently live in existed. Magellan had sailed around the world a few years earlier, so the idea the earth was round was entering the public consciousness. 
+  <br><br>
+500 years ago, my ancestors ate different food, believed different things, used different technology, raised their children differently. They had access to way less information, different medicine and suffered from different diseases. They lived for a different amount of time and lived in a different climate. If all these things shift again across the next 50 years, the world will be a radically different place by the time I’m old and we are going to need to get very good at navigating rapid change. 
+  <br><br>
+  </p>
+
+</div>
+
+
+
+<br><br>
+Fortunately, we are the most well-equipped people in history. The internet, our power tools, and our tech-savvy culture should be enough for us to adapt to anything. I’m hoping that Unify will serve to remove the bottleneck stopping us from directing our attention to our personal experience and allow pockets of localized clarity to reemerge in an increasingly chaotic society. 
+<br><br>
+Unify is designed to help improve life across all the categories of experience. Instead of being a tool targeted to specific categories of life such as career, romance or finance it is a tool to improve all categories in response to the users own desires. Unify is the transition from an integrated parts model of the human experience, to a holistic understanding. 
+<br><br>
+Unify could be described as a tool for planning, learning new skills, and coping with unexpected events. Unify allows you to greater access your personal experience to identify the next task in your life. 
+<br><br>
+If enough of us do this we can attain sufficient control to preserve individuality in the face of sweeping cultural, political, and technological events that dominate the attention of individuals and homogenize the human experience. Financial capital is secondary to attention as a resource, but you’ll struggle to attain the freedom to truly direct your life without any capital to utilize. If this concerns you consider Unify the first piece of capital for reclaiming your attention and ability to direct your own life. 
+<br><br>
+Therefore the new frontier is th6e successful navigation of life in the modern world, that is to say, a rapidly transforming world. Unify is the tool to engage in this process and attention is the capital that makes things run smoothly. I implore you to use Unify, at least for a time. It won’t cost you anything and I believe it will accelerate the rate at which you remove unnecessary suffering from your life. Personally, I attribute some of my largest victories to the clarity gained from the Unify process. 
+<br><br>
+- Aaron Dutton
+<br><br>
+
+ </p>
+
+
+
+
+
+</div>
+</div>	
+<!-- End Article-->
+
+<!--About Recreate Meaning-->
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About</h2>
+        <img class="center" src="https://i.imgur.com/01ycE85.png" alt="" >
+        <p>We are trying to empower those who wish to live well through technology assisted problem solving. <a href="https://twitter.com/Recreatemeaning">Read more...</a><br> </p>
+    </div>
+
+<!--Popular/Related Posts-->
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><h4>Navigating Instability:</h4><p>Preparing for Shortages</p></div><br>
+      <div class="fakeimg"><h4>On the Origin of Ideas:</h4><p>Understanding algorithms</p></div><br>
+      <div class="fakeimg"><h4>The Money Problem:</h4><p>The Basics of Financial Strategy</p></div><br>
+    </div>
+
+<!--Social Media Links -->
+    <div class="card">
+      <h3>Social Media</h3>
+  	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer --> 
+<div class="footer">
+<div class="navbar">
+ <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+  <a href="#news">Mediator</a>
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="#" style="float:right">About</a>
+</div>
+</div> 
+
+
+</body>
+</html>
+
+

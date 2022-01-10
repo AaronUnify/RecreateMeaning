@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  color: white; 
+}
+.fakeimg p {
+  color:black;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Text box light */
+.strategy {
+  background-color: #c7c7c7;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+}
+
+
+
+/* Text Box Dark */
+.TextBoxDark {
+  background-color: #333333;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+  color: #f0f0f0; 
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+/*Top Navigation Buttons */
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+}
+
+
+
+
+
+
+
+/*IMAGE*/
+
+
+
+img {
+ 
+  height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ width: 400px;
+}
+
+
+
+
+
+}
+</style>
+</head>
+<!-- End of CSS -->
+
+
+<!-- Begin HTML -->
+
+
+
+
+
+<body>
+
+
+
+<div class="header">
+  <h1>Recreate Meaning</h1>
+  <p>Technology assisted problem solving. </p>
+</div>
+
+
+
+<!-- Navigation Bar Begins -->
+
+<div class="navbar">
+  <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+  <a href="#news">Mediator</a>
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="#" style="float:right">About</a>
+  <div class="dropdown">
+   <button class="dropbtn">Social Media 
+    <div class="dropdown-content">
+	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+   </button>
+</div>
+<!--     <div class="dropdown">
+   <button class="dropbtn">Articles
+    <div class="dropdown-content">
+      <a href="#">Economics</a>
+      <a href="#">Investing</a>
+      <a href="#">Philosophy</a>
+      <a href="#">Psychology</a>
+   </button>
+</div>-->
+</div>
+
+<!-- Navigation Bar ends -->
+
+
+
+
+
+<!-- Begin Article Headline and Preview -->
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>On the Origin of Ideas...</h2>
+      <h5>A normal article, Jan 4, 2022</h5>
+      <img class="center" src="https://uploads8.wikiart.org/images/ivan-aivazovsky/american-shipping-off-the-rock-of-gibraltar-1873.jpg!Large.jpg" alt="" >
+								
+
+
+	<p><strong>Success Against All Odds. </strong><br><br>
+
+	</p>
+
+
+<!-- End Article Headline and Preview -->
+
+
+<!-- Begin Article body  -->
+
+<p> 
+The money problem is when you're lacking the required resources to be able to make the choices that would allow for a unique path through life. Instead finding yourself following a well trodden path of financial scarcity, forced to devote a lifetime of attention and energy to the task of survival.  
+<br><br>
+There are two kinds of financial scarcity: absolute poverty and relative poverty. The difference is that those in absolute poverty cannot afford essentials such as housing, food, medicine, ect. Most Western countries have charities, government programs, and welfare available to assist those in absolute poverty. 
+<br><br>
+Relative poverty is when you cannot afford the same things as other members of your society and peer group. It can be frustrating seeing other people with an abundance of resources, while you feel like you’re working just as hard. If the people with the abundance are older, it can be reassuring that they are doing well. If they’re the same age, went to the same school, and work a similar career then it’s hard to avoid becoming envious. 
+<br><br>
+Envy signals that the other person has something you want. It’s best to acknowledge this outright when it comes to money. Money can be used to purchase a lifestyle, increased freedom, security, novelty and health. There is also plenty of it around, it’s just a matter of figuring out how to get more of it. 
+<br><br>
+Some claim that "money is the root of all evil", but like many common sayings this misquote has lost its original meaning. The complete quote is "For the love of money is the root of all evil: which while some coveted after, they have erred from the faith, and pierced themselves through with many sorrows." It's a warning that the yearning for money above all else causes suffering and it holds true for most things, not just money. 
+<br><br>
+Rather than being the root to all evil, money is a means to an end. If the reason that you want more money is to impress other people, your character lacks the depth required to impress other people. At least, the depth required to impress interesting people. 
+<br><br>
+If the reason you desire money is to fund the pursuit of a meaningful life that is beneficial to the earth and its people, you’re more likely to do something that makes you feel good and truly impresses other people. But remember, a meaningful life should be determined by your own standards, not anyone else's. 
+<br><br>
+The process of solving the money problem can be a source of temporary meaning if you are yet to receive your call to adventure. 
+<br><br>
+If you’re starting at zero dollars, then you get money when you earn it by generating value that people are willing to pay for. My anti-capitalist friends imagine I mean a boring job by that statement, my entrepreneur friends imagine the statement refers to customers. Whichever way you decide to take it is probably an indication of your values at this point in time. If I had to start over, (either by going back in time or just losing it all), starting at zero I would get any job (even Mcdoanld’s) and start saving. 
+<br><br>
+The reason I would take any job initially is because I think it’s much easier to make money from investments and most careers are overrated. I only need to make enough money for a house deposit and to pay a mortgage or two for a few years to build some serious equity. After that point I could purchase a business of my own if it was what I wanted.  
+<br><br>
+In most economies, provided you're capable of generating value and your negotiating skills are up to date, attaining some money should be possible. To avoid the root of all evil problems, get into the habit of identifying win-win situations that allow for both parties in the transaction to benefit. Otherwise you risk failing to provide value and alienating yourself from future trade with that person. 
+<br><br>
+However you choose to pursue income, the most important thing is for your income to be greater than your expenses. Take what you can get when it comes to income, low paying jobs are better than welfare because they give you a chance to gain skills, and expand your network of contacts. If you work competently and efficiently eventually something that pays more will become available to you. Either within the organisation or outside of it. 
+<br><br>
+But when it comes to keeping your expenses less than your income, get serious. Live with your family if you can and repay them later, if that’s not possible live with your buddy. If you don’t have any buddies, rent the cheapest place possible with like-minded roommates.  
+<br><br>
+Excess income used to be used to sit in the bank and generate interest. Now it doesn’t really do that, instead the interest generated by your money doesn’t cover your losses from inflation and then it's taxed. Doesn’t sound fair right? Sounds like one big incentive to avoid saving money to me. 
+
+In fact, why not spend all your money as soon as you get it, or better, why not spend the money you haven’t earned yet? Well that’s simple, the interest on loans relating to spending money on anything fun is around 10%+. You’ll put yourself in a hole that you can’t climb out of pretty quickly doing that. 
+<br><br>
+So an amendment, why not invest money you haven’t earned yet? The interest rates for investment loans tend to be around 2% currently. Plus, you can buy income generating investments. A good investment will generate enough income to pay while appreciating in value. Buy something for 200k, it pays for itself, sell for 300k. Rinse and repeat. 
+<br><br>
+Let's talk more specifically about strategies for investing your excess income to attain the necessary wealth to fund a meaningful life. These are not foolproof, but in general they have a higher chance of success than most other strategies.The I selected a value of $1,000,000.00 has been selected arbitrarily to demonstrate the potential of these strategies. 
+<br><br>
+	
+	<div class = "strategy">
+	
+<strong>STRATEGY 1: Entrepreneurship</strong><br>
+This strategy is ideal for high-confidence, high-energy, highly adaptable people. <br><br>
+1. Attain a diploma, trade or degree* in a field of personal interest**. <br>
+2. Gain employment in the field and focus on developing competence. <br>
+3. Use your reputation to begin working for yourself once you are capable.*** <br>
+4. Once you have more work than you can handle on your own, hire and train competent employees. <br> 
+5. Keep the business alive by ensuring work remains to a high standard. <br>
+6. Once the net-profit of the business reaches $250,000.00, you should be able to sell the business for $1,000,000.00**** 
+<br><br>	</div>
+*Unless you don’t want to <br>
+**Without personal interest you will likely be outcompeted. <br>
+***Use <a href="https://aaronunify.github.io/Contracts_test_3/Contractor_Agreement">the contractor agreement</a> to make this step easier. <br>
+****Businesses tend to sell for a multiple of their earnings. Depending on the economy and industry prices vary. As an estimate I use x4 net profit. 
+<br><br>
+
+		
+<div class = "strategy">
+
+<strong>STRATEGY 2: Property</strong><br>
+This is the strategy I have chosen for the time being. 
+It is easier to run this strategy if you have solved the relationship problem as two people tend to earn more than one. 
+<br><br>
+1. Attain employment, excess income and save 10%* of the properties value**. <br>
+2. Visit the bank or mortgage broker and tell them you are interested in purchasing a property***. <br> 
+3. Purchase your first property and being building equity****. <br>
+4. Use the equity from the first property to purchase a second, then third property. <br> 
+5. Rent out your two properties while living in the third. Wait 10-20 years for them to increase 2x, or 3x, in value. <br>
+6. Once the properties have significantly increased in value, sell one to pay down your debt. In total the remaining two are likely worth $1,000,000+.  
+
+		
+		<br><br></div>
+	
+	<br><br>
+	
+	
+*This is dependent on the lending laws of your area. <br>
+**Pick a cheap one first, rising property prices make it difficult to save 10% because the goalposts keep moving. <br>
+***If they say no, go to a different bank or mortgage broker. <br>
+****Equity is generated when the property price increases after the time of purchase, and when you pay down your mortgage. <br>
+
+	
+	<br><br>
+
+	
+	
+		<div class = "strategy">
+<strong>STRATEGY 3: Stocks</strong><br>
+Stocks are great for people who are willing to trade volatility in their net worth for flexibility. 
+Stocks can be bought and sold at any time* and tend to trend upwards over time. 
+Index funds are a suitable alternative to stocks for people who want to do minimum research while gaining access to the returns of the stock market. 
+<br><br>
+1. Attain employment and excess income. <br>
+2. Use excess income to purchase stocks or index funds<br>
+3. Reinvest the income generated by your stocks into more stocks. <br>
+4. If you can manage a 8% return, $1,666.66 invested monthly for 20 years compounds into $1,000,000.00<br>
+
+*Provided the market is open
+			
+			<br><br></div>
+	
+	<br><br>
+Stocks are great because of the flexibility they offer. 
+Miss a month of savings?? No worries, it'll just take longer to reach your financial goals. 
+Have some extra income? Great, invest it if you like.  
+<br><br>
+Although, I would warn against trying to time the market in general, there are times when the stock market crashes and everything is cheap. 
+<br><br>
+
+<div class = "strategy">
+<strong>STRATEGY 4: Seller Finance an existing business</strong><br>
+<br><br>
+Seller finance allows you to purchase 100% of a business but only pay 60% of the purchase price upfront. The remaining 40% is paid over the following few years. To do this you are required to provide a deposit of 10% of the purchase price of the business in cash or home equity to the bank for a business loan. 
+<br><br>
+Remember to buy as close to 4x earnings as possible. A business generating $125,000.00 in profit should be worth around $500,000.00. If the business is currently unprofitable, you should probably pass up the deal. If the seller is unwilling to do the deal through seller finance, it may be the case that they don’t think the business will still be generating money in a few years time, in which case you should probably pass up the deal. It may also be the case that the seller is simply being offered a better deal from someone else. 
+<br><br>
+Now the good thing about Seller Finance is that you purchase a business that is already generating a profit but you don’t pay the full price upfront. If the business is worth $500,000.00 and you pay 60% upfront, you’re still left with 200k in cash. This money can be used to improve and update the business. 
+<br><br>
+There are two things to spend this money on, purchasing/leasing equipment and hiring talent. Ideally you’ll purchase a business in which you can operate as an employee, which hasn’t been marketed well. In the age of the internet you should be able to market your business for free, so don’t pay for this, unless you intend to use the hours saved for more profitable activity. 
+<br><br>
+Remember that businesses sell for multiples of earnings. If you increase the earnings of the business from $125,000.00 to $250,000.00 you’ve roughly doubled the value of the business. $500,000.00 to $1,000,000.00. 
+<br><br>
+A word of warning though, when this strategy goes wrong, it goes really wrong. You’ll probably go bankrupt and damage your reputation. So don’t rush into this kind thing.  
+<br><br>
+1. Generate a 10% deposit of the purchase price of a profitable business that operates within the abilities of your skillset.*  <br>
+2. Negotiate to purchase through seller finance. <br>
+3. Market the business, use your remaining money to hire talent and upgrade equipment, work really hard. <br>
+4. Sell the business when you’re ready to do something else. <br>
+
+			
+			<br><br></div>
+
+
+<br><br>
+You may have noticed that these strategies are not exclusive. It is possible to run them all at the same time, however your income, time and energy will be major bottlenecks slowing your progress. It is likely best to run one strategy at a time, until you are confident that your finances are secure and that you have the time and energy required to begin an additional strategy.
+<br><br>
+It is important to be intentional with your finances, because in doing so, you will have the best chance of obtaining the necessary resources to fund the life you want.  </p>
+
+
+</div>
+</div>	
+<!-- End Article-->
+
+
+
+<!--About Recreate Meaning-->
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About</h2>
+        <img class="center" src="https://i.imgur.com/01ycE85.png" alt="" >
+        <p>We are trying to empower those who wish to live well through technology assisted problem solving. <a href="https://twitter.com/Recreatemeaning">Read more...</a><br> </p>
+    </div>
+
+<!--Popular/Related Posts-->
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><h4>Navigating Instability:</h4><p>Preparing for Shortages</p></div><br>
+      <div class="fakeimg"><h4>On the Origin of Ideas:</h4><p>Understanding algorithms</p></div><br>
+      <div class="fakeimg"><h4>The Money Problem:</h4><p>The Basics of Financial Strategy</p></div><br>
+    </div>
+
+<!--Social Media Links -->
+    <div class="card">
+      <h3>Social Media</h3>
+  	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer --> 
+<div class="footer">
+<div class="navbar">
+ <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+  <a href="#news">Mediator</a>
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="#" style="float:right">About</a>
+</div>
+</div> 
+
+
+</body>
+</html>
+
+
+

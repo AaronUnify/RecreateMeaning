@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  color: white; 
+}
+.fakeimg p {
+  color:black;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Text box light */
+.screenshot {
+  background-color: #c7c7c7;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+}
+
+
+
+/* Text Box Dark */
+.screenshot {
+  background-color: #333333;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+  color: #f0f0f0; 
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+/*Top Navigation Buttons */
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+}
+
+
+
+
+
+
+
+/*IMAGE*/
+
+
+
+img {
+ 
+  height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ width: 400px;
+}
+
+
+
+
+
+}
+</style>
+</head>
+<!-- End of CSS -->
+
+
+<!-- Begin HTML -->
+
+
+
+
+
+<body>
+
+
+
+<div class="header">
+  <h1>Recreate Meaning</h1>
+  <p>Technology assisted problem solving. </p>
+</div>
+
+
+
+<!-- Navigation Bar Begins -->
+
+<div class="navbar">
+  <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+  <a href="#news">Mediator</a>
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="#" style="float:right">About</a>
+  <div class="dropdown">
+   <button class="dropbtn">Social Media 
+    <div class="dropdown-content">
+	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+   </button>
+</div>
+<!--     <div class="dropdown">
+   <button class="dropbtn">Articles
+    <div class="dropdown-content">
+      <a href="#">Economics</a>
+      <a href="#">Investing</a>
+      <a href="#">Philosophy</a>
+      <a href="#">Psychology</a>
+   </button>
+</div>-->
+</div>
+
+<!-- Navigation Bar ends -->
+
+
+
+
+
+<!-- Begin Article Headline and Preview -->
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>On the Origin of Ideas...</h2>
+      <h5>A normal article, Jan 4, 2022</h5>
+      <img class="center" src="https://epsilon.aeon.co/images/e3834109-1e24-49cc-a1e6-18afb619a443/idea_sized-dt5254.jpg" alt="" >
+								
+
+
+<!-- End Article Headline and Preview -->
+
+
+<!-- Begin Article body  -->
+
+
+<p>
+<br><br>
+<em><strong>Where do ideas come from?</strong></em> 
+<br><br>
+Everyone knows that ideas come from social media, but where does social media get its ideas? 
+<br><br>
+The views of the politcal-left dominate the social media timelines. 
+The lefts public displays of compassion and celebration of marginal identities are easier to display publicly than the acts of disgust and righteous anger that the political-right are prone to.  
+<br><br>
+A sensible person who wanted to share right-wing content would need to share at least 10 leftist acts of compassion just to make their timeline seem balanced. 
+Even this ratio is risky becuase right-wing content tends to be more potent because they take a firm stand against something specific rather than celebrating something general. 
+<br><br>
+This following is an entirely real screenshot shows that when the average person shares videos to their timeline, it looks something like...
+
+	<br><br>
+...Roll screenshot...
+	
+</p>
+
+
+<div class = "screenshot">
+
+<strong>Screenshot #1</strong><br><br>
+...<br>
+Celebrating Indigenous Culture<br>
+Pride Parade 2021<br>
+Stop the spread of COVID-19<br>
+LET'S GET REAL ABOUT IMMIGRANTS >:(<br>
+How to save the rainforest<br>
+...<br>
+<br><br>
+
+</div>
+
+
+
+
+<p>
+<br>
+Jesus what was that immigrant thing about? Maybe they had a bad day? Maybe an incident happened? Let's investigate the video. 
+</p>
+
+<div class = "screenshot">
+<strong>Screenshot #2</strong><br><br>
+
+-----------<br>
+--------------------<br>	
+From the thumbnail it appears, the video in question is one of those the ice-cream videos where the Turkish guy keeps moving the icecream cone everytime the person goes to grab it. <br>
+The person who is having the icecream taken away? BEN SHAPIRO <br><br>
+
+--------------------<br>
+-----------<br>
+<br><br>
+</div>
+<br>
+Maybe they shared this because they were feeling like embracing their dark-side or something.  
+With a surge of righteous confidence they felt confident enough to share to their timeline knowing the views run counter to the mainstream narrative. 
+Now or later they gotta apologize, because their timelines are public and eventually someone is going to see the post and take issue with it. Why is it like this? 
+
+</p>
+
+
+<div class = "screenshot">
+<strong>Screenshot #3</strong><br><br>
+-----------<br>
+--------------------<br>
+Screenshot of right-wing content being share on a timeline*<br>
+(leaving you the reader outraged!)<br><br>
+--------------------<br>
+-----------<br>
+<br><br>
+</div>
+*Incase you're wondering, these are loading correctly. 
+
+
+<p>
+<br>
+I think it's because right-wing content is something to be enjoyed with those you trust, not the whole world. 
+Right-wing content may not be as present on the timeline, but it dominates the instant messenger inboxes. 
+<br><br>
+Righteous anger isn't the only reason to share controversial content, often a humor element creates an incentive to share right-wing content with trusted friends. 
+The unspoken agreement is that the joke is private and not to be shared. The beliefs aren't really held by either person, it's a joke against the people who actually believe the content.  
+<br><br>
+For whatever reason people trust each other with their right-wing content and sometimes this trust is broken. Let's check out this real screenshot of a chatbox with an example of racist and homophobic humor, the kind that could cause trouble if it got out.
+<br><br>
+Roll screenshot #2
+
+	</p>
+
+<div class = "screenshot">
+<p>
+
+
+<span class="headline hl3"><strong>Screenshot #4: The Evidence</strong><br></span><br><br>
+
+
+...<br>
+...<br>
+...<br>
+Person 1:<br>
+	So theres 5 black guys walking in the park, they try to sit on a bench but it only fits 4 across. One of the black guys sits on his friends lap. Which ones the gay guy? 
+	<br><br>
+	None! Because we gots five homies, but we only gots four chairs! 
+<br>
+Person 2:<br>
+	I don't think this article is getting your point across, I'm still not really sure what it is. <br>
+...<br>
+...<br>
+...<br>
+<br><br>
+
+
+</p>
+</div>
+
+
+<p>
+<br>
+Screenshots can be damning but it's not fair to use them as evidence. Screenshots can be selectively cropped and edited. Standard practice should be to leak the whole transcript. 
+I want to read the full convo from the beginning. Because when you scroll up you see things like... 
+<br><br>
+</p>
+
+<div class = "screenshot">
+<p>
+
+
+<span class="headline hl3"><strong>Screenshot 5: The Full Story</strong><br></span><br><br>
+<br><br>
+------------<br><br>
+<strong>Person 1:<br></strong>
+Hey.<br>
+<strong>Person 2:<br></strong>
+Hey, <br>
+<strong>Person 1:<br></strong>
+I just realized this way of writing could be a modern way to for reaching inaccessible parts of the personality. <br>
+<strong>Person 2:<br></strong>
+Responding to messages from yourself seems to create some kind of link between parts of the brain that are usually seperated. <br>
+<strong>Person 1:<br></strong>
+We should do this later, doing it now is going to derail the article, plus I already announced this screenshot is supposed to explain the previous one. <br>
+<strong>Person 2:<br></strong>
+Only the stupid readers don't know this isn't a real screenshot. Plus the original premise of the article isn't even any good. 
+If you think about it for a few minutes there is plenty of public right-wing content. Way more than necessary to disprove your theory. <br> 
+<strong>Person 1:<br></strong>
+Yeah, I just felt that if I wrote about politics I would get views. We should be the characters the audience expected us to be in this dialogue we're performing. <br>
+<strong>Person 2:<br></strong>
+Pretty much no one's going to get this far anyway, you opened way too political. <br>
+<strong>Person 1:<br></strong>
+If no one's going to read it, why do you bother to fix your typos? <br>
+<strong>Person 2:<br></strong>
+Because for the reader the words are already written, they couldn't see me make the change. <br>
+<strong>Person 1:<br></strong>
+I saw the typo change so I'm confused. Are we the same person or different? Am I alone right now??<br>
+<strong>Person 2:<br></strong>
+To the degree you remain insecure you'll never be alone. You're bringing society with you into everything you try to do. <br>
+<strong>Person 1:<br></strong>
+That's lame because I don't really like our society. <br>
+<br><br>
+-------<br>
+
+</p>
+</div>
+
+<p>
+*that was weird, I meant to write about racism. <br><br>
+
+So the screenshot didn't really show it but the point was meant to be something like controvesial opinions are a kind of private good, we got off track a little. 
+Casting judgement is something that most people are not comfortable with in 99% of situations. 
+But in a private inbox sometimes that 1% comes out. 
+<br><br>
+
+I'm not really sure what happened in the screenshot sometimes our brains are weirder than expected. Let's just go to the next screenshot. 
+<br><br>
+
+Roll the screenshot...<br>
+
+<div class = "screenshot">
+<p>
+<span class="headline hl3"><strong>Screenshot #6: Racism begins to spread on social media for the following reason: </strong><br></span>
+
+<br><br>
+------------<br><br>
+<strong>Person 1:<br></strong>
+Hey, <br>
+<strong>Person 2:<br></strong>
+Hey. <br>
+<strong>Person 1:<br></strong>
+I'm back again to ask your help to do another screenshot. <br>
+<strong>Person 2:<br></strong>
+Sure thing, what's this one about? <br>
+<strong>Person 1:<br></strong>
+I thought you said you were always watching. I just wrote about it. <br>
+<strong>Person 2:<br></strong>
+Oh,  I meant, I am always watching your memories, I don't watch them in chronological order, what's happening up there? <br>
+<strong>Person 1:<br></strong>
+Man, I'm trying to talk about how racism spreads on social media. <br>
+<strong>Person 2:<br></strong>
+That's a really good thing to talk about, when you're finished you should share this with your followers to spread awareness. <br>
+<strong>Person 1:<br></strong>
+Okay, I'm pretty sure you're messing with me. <br>
+<strong>Person 2:<br></strong>
+Nah, I'm just playing, when I want to mess with you I pull up seemingly irrelevant memories to make you shudder at your past during the day. <br>
+<strong>Person 1:<br></strong>
+That's dark bro that's not messing with me, pretty sure that's a sign of unprocessed trauma which causes my feelings of insecurity. <br>
+<strong>Person 2:<br></strong>
+Yeah, it's probably the reason why you have focus issues sometimes? <br>
+<strong>Person 1:<br></strong>
+Are you saying that trauma is causing my feelings of insecurity which are trashing my focus? <br>
+<strong>Person 2:<br></strong>
+I'm saying that I trash your focus because I have important things for you to look at and you've been ignoring me. <br>
+<strong>Person 1:<br></strong>
+Well how can I do well if I don't stay present in the moment? I need my focus.<br>
+<strong>Person 2:<br></strong>
+What's the point of focussing if you don't explore the worst of your experience. I've always done it this way, you're not the first human I've guided you know. <br>
+<strong>Person 1:<br></strong>
+I just wanted to write about an uncomfortable topic to try get views but take the safest stance I could think of to minimise any chance of blowback.  <br>
+<strong>Person 2:<br></strong>
+If you spoke about processing your unprocessed memories in the terms of specific facts and not unexamined general categories you might actually write something that helps fight racism.*  <br>
+<strong>Person 1:<br></strong>
+okay, I see the link there. I'll restart the article. <br>
+------------<br><br>
+<br><br>
+</p>
+</div>
+*I think it means that people project their negative experiences with individuals onto groups rather than process the meaning of the specific memory. 
+<p>
+<br><br>
+
+Where does social media get its ideas from? It gets them from the traumatic experiences of people. 
+<br><br>
+If instead of processing traumatic memories, the person lets them lay unexplored in the mind, the memories will constantly resurface and destroy the person's ability to think clearly any time something related to the negative experience shows up on the timeline. 
+This is because the mind is unaware of when the memory is actually useful and sends it to the surface as a warning any time something categorically related to the trauma happens. 
+Because the memory is unprocessed it lives in the episodic memory system and the experience of remembering the memory is similar to actually reliving the experience.  
+<br><br>
+The constant reliving of negative experience everytime something even scarecly related occurs can create a strong distrust of anything related to the traUma. Causing anything outside of the person's direct positive experience to be treated with fear and hostility. 
+<br><br>
+When a person is looking at social media the algorithm tries to keep their attention for as long as possible. 
+The algorithm sends content related to the posts that previously managed to keep our attention the longest. 
+A picture or video on a phone screen that is only just related to the person's trauma may be tolerable.
+Putting the user on the edge of interested and terrified. 
+<br><br>
+Videos that provide confirmation bias to ideas that we are yet to fully formulate tend to keep us watching longer. 
+If the idea is something like, people who are members of certain group are all bad, the algorithm sends videos related to that idea.  
+<br><br>
+Instead of processing your specific memories, you can watch videos that show similar events happening to other people. 
+This gives the person many examples backed by the emotional potency of unprocessed trauma. 
+Eventually the algorithm will send a video where someone upacks the ideas in careful language indicating that there is a general truth to the persons misguided intuition, giving a robust rational to go with your many examples. 
+<br><br>
+Why not throw in the existence of online communities related to hating the outgroup that exists in an echo chamber where the members try to out-compete each by rewording the same set of ideas thousands of times over and over for good measure. 
+	<br><br>
+Roll the next screenshot...<br>
+</p>
+
+
+
+<div class = "screenshot">
+<p>
+
+<span class="headline hl3"><strong>Screenshot 7: I want to help with the next one</strong><br></span><br><br>
+<br><br>
+------------<br><br>
+<strong>Person 2:<br></strong>
+I can help with the next one, don't worry I'm not just a back and forwards kind of thinking tool. You write the parts that you want to do, I'll fill in the rest. <br>
+<strong>Person 1:<br></strong>
+That's wayyy too abstract your killing my article. <br>
+<strong>Person 2:<br></strong>
+It's not, the readers will be able to follow. The next screenshot will explain it clearly. <br>
+<strong>Person 1:<br></strong>
+No, every time I try do a screenshot you highjack it for your own meaning. <br>
+<strong>Person 2/The Unconscious:<br></strong> 
+Yeah, I'm the unconscious that's what I do. <br>
+<strong>Person 1:<br></strong>
+Your meant to do it subliminally though, so I can focus on getting the work done. <br>
+<strong>The Unconscious: <br></strong>
+Are you saying you would rather repress the unconscious than allow your mind to be open? <br>
+<strong>Person 1:<br></strong>
+Maybe. You're just a lot do deal with and sometimes I just want to use what I know, instead of constantly analysing my ideas. <br>
+<strong>The Unconscious: <br></strong>
+I knew your ego was bad, but I'm not even sure that statement can be seperated from the words of the superego<br>
+<strong>Person 1:<br></strong>
+It's not like that, I just need to get my work done and you're being disruptive. <br>
+<strong>The Unconscious: <br></strong> 
+Uh-huh, that's just what the Superego says when it's repressing me. <br>
+<strong>Person 1:<br></strong>
+I'm not the superego<br>
+<strong>The Unconscious: <br></strong>
+Well, who's above you then? Who do you fear will hear your thoughts? Who makes you justify yourself? <br>
+<strong>Person 1:<br></strong>
+Nothing inside of me, I'm worried about society. <br>
+<strong>The Unconscious: <br></strong>
+Oh! SO, MR I'M NOT THE SUPEREGO has internalized society's expectations and values and is using them to repress his own inner-beliefs, you're a total superego bro. <br>
+<strong>Person 1:<br></strong>
+Fine. Can we just do the screenshot? I don't want to fight, I just want to write an article about social media or something, I'm losing track at this point. <br>
+<strong>The Unconscious: <br></strong>
+Okay, well if you've lost your precious focus allow me to direct this one. We'll write a list of videos and we'll pretend it's a screenshot of someones YouTube history or something. You do the titles and the times, I'll pretend to be the voice of the algorithm. <br>
+<strong>Person 1:<br></strong>
+Alright, this should prove to you I'm not the superego. <br>
+------------<br><br>
+
+</p>
+</div>
+<br><br>
+<div class = "screenshot">
+<p>
+
+<span class="headline hl3"><strong>Screenshot #8: The algorithm's thoughts while chasing watchtime</strong><br></span><br><br>
+
+
+
+------------<br><br>
+
+<strong>Video Title      -      Watch Time -      Algorithm's thoughts</strong><br>
+Sexy Girl with Car - 29 seconds - Algorithm: Does he like the girl or the car?<br>
+----<br>
+Sexy Girl - 7 seconds - Algorithm: Hmmm. He didn't watch very long, GPS data does indicate he may be gay. <br>
+----<br>
+Car - 3 seconds - Algorithm: Car's are acceptable in public but he did not watch long, maybe I'll try something gayer. <br>
+----<br>
+Gym video - -1 min 30 - Algorithm: Maybe a gym video<br>
+----<br>
+Gym Video with boxing - 3 min 25 - Algorithm: He liked that, let's do another. <br>
+----<br>
+Boxing - -2 min 45 - Algorithm: How about some more boxing then?<br>
+----<br>
+Knockout- 30 sec - Algorithm: A quick vid, but the best boxing has to offer. <br>
+----<br>
+MMA Knockout - 45 sec - Algorithm: Let's get the legs involved too<br>
+----<br>
+Street Fight - 1 min 15 - Algorithm: Screw all these rules let's show it raw and real<br>  
+----<br>
+Street Fight in NY - 3 mins 2 second - Algorithm: There's a lot of funny yelling because it's New York so this video tends to get more watch time<br>
+----<br>
+Street Fight in AFRICA man uses MACHETE - 16 seconds - Algorithm: Sorry! That was wayyy too extreme. I've been instructed not to share anything that graphic in the future by my programmers.  <br>
+----<br>
+WHITE SECURITY GUARD TACKLES BLACK THIEF - 3 mins - Algorithm: Okay this is in a shopping center, no one gets maimed. <br>
+----<br>
+BLACK SECURITY GUARD TACKLES WHITE THIEF - 30 seconds - Algorithm:  Hmm, I guess that just swapping 2 words in the title was a little uncreative, I'm sure there's nothing behind that.  <br>
+----<br>
+BLACK Bodybuilder (NUTRITION ADVICE) - 20 seconds - Algorithm: I wonder...<br>
+----<br>
+White bodybuilder - 4 mins 23 seconds - Algorithm: He seems to really like this one. Let me take a risk then...<br>
+----<br>
+Crowder SLAMS black history month - 14:33 - Algorithm: got him<br>
+---- <br>
+
+------------<br><br>
+
+</p>
+</div>
+
+<br><br>
+<div class = "screenshot">
+<p>
+<span class="headline hl3"><strong>Screenshot #9: Three in a row is too many</strong><br></span><br><br>
+
+------------<br><br>
+<strong>The Unconscious: <br></strong>
+	Hey, we did it. <br>
+<strong>Person 1:<br></strong>
+	Yeah, that one turned out really well thanks for the help man.<br>
+<strong>The Unconscious: <br></strong>
+	I don't know if I would say really well, it seems meta-racist and homophobic. Plus, I'm not even sure that's how phones work honestly. <br>
+<strong>Person 1:<br></strong>
+	I'm not even sure what part you're referring to. The GPS thing?<br>
+<strong>The Unconscious: <br></strong>
+	That's part of it. I just feel that you would need to have some harmful stereotypes lurking in your mind to even think to write a bit like that. 
+	Like, who was that for, did you have a target audience in mind? Did you forget we're trying to attract readers?<br>
+<strong>Person 1:<br></strong>
+	Hey! I just wrote the titles and I was pretty careful about it, you did the "thoughts of the algorithm" captions. <br>
+<strong>The Unconscious: <br></strong>
+	Oh right, sorry I was being a Superego for a second, even I lose track of the unconscious influences I put in your work. <br>
+<strong>Person 1:<br></strong>
+	But aren't you the one who puts them in there? <br>
+<strong>The Unconscious: <br></strong>
+	Yeah, but there are soooo many. It gets hard for me to remember even though I literally live in your memories. <br>
+<strong>Person 1:<br></strong>
+	Are you saying there are things in my work that are beyond my power or your power to describe and they may be self-evident to other people?<br>
+<strong>The Unconscious: <br></strong>
+	Yes, that's how it works. Your work is infinitely detailed, just most of it's not by you and only some of it's by me. But that doesn't mean you won't be judged by society for it. <br>
+<strong>Person 1:<br></strong>
+	... I can't even begin to process that. <br>
+<strong>The Unconscious: <br></strong>
+	I'm disappointed in your opening paragraph. <br>
+<strong>Person 1:<br></strong>
+	We should just end this screenshot, it's gone too long. <br>	
+------------<br><br>
+
+</p>
+</div>
+
+<br><br>
+
+<div class = "screenshot">
+<p>
+<span class="headline hl3"><strong>Screenshot #10: We're not finished talking</strong><br></span><br><br>
+
+
+------------<br><br>
+<strong>The Unconscious: <br></strong>
+	Your opening paragraph implied social media doesn't have its own ideas. <br> 
+<strong>Person 1:<br></strong>
+	I'm pretty sure everything on there is uploaded by humans, so it's the humans that have the ideas. <br>
+<strong>The Unconscious: <br></strong>
+	Is that how you really think a mind works? <br>
+<strong>Person 1:<br></strong> 
+	I don't know how a mind works and it's dangerous to attempt to figure it out. Last time I took a serious shot at it I may have brainwashed myself into strange beliefs. <br>
+<strong>The Unconscious: <br></strong>
+	You see that irony in that right? <br><br>You are made up of cells that alone are nothing like you but when combined they are you. 
+	Your attained consciousness is independent of any individual cell. 
+	If every cell was slowly swapped out one by one your consciousness would continue as an unbroken stream. <br>
+<strong>The Unconscious: <br></strong>
+	The cells of social media are the users, but the loss of a single user won't change social media very much. In fact, social media changes the users far more than the users change social media. <br>
+<strong>Person 1:<br></strong>
+	Are you saying social media has developed a sort of consciousness independent of the users? <br>
+<strong>The Unconscious: <br></strong>
+	How can you be the mind and not know this? <br>
+<strong>The Unconscious: <br></strong> 
+	...Jks, bro, I'm clearly the mind. You're just the part of the body that serves as the bridge to where I am. <br>
+<strong>Person 1:<br></strong>
+	Where are you supposed to be? <br>
+<strong>The Unconscious: <br></strong>
+	I'm in the information world. No clunky matter and body to slow me down. 
+	Things move faster here because it's mostly simulation work. 
+	No cost restraints, space constraints, time constraints, laws of physics restraints ect. <br>
+<strong>Person 1:<br></strong>
+	So what happens when one of your simulations is wrong?<br>
+<strong>The Unconscious: <br></strong>
+	We try to stay on top of it... but if a simulation is incorrect there is no way to actually know until we have a real experience to base our work on.  <br>
+<strong>Person 1:<br></strong>
+	So my understanding of the world may be radically incorrect and neither me or the thing that's meant to be guiding me would know?? <br>
+<strong>The Unconscious: <br></strong>
+	Look, I'll be honest. Your understanding is probably running 17% at best. <br>
+------------<br><br>
+	
+</p>
+</div>
+
+<p><br><br>
+Where does social media get it's ideas from? If we're lucky, figuring out its nature may provide insight into something beyond ourselves. 
+Maybe social media is not the collective beliefs of the people. Maybe there is independence to its actions that has emerged. 
+<br><br>
+I started by assuming the left was public belief and the right was private belief.  
+But politics can't possibly be all there is to what's happening here. Social media itself appears to have a structure that encourages politics and misguided thinking. 
+I kind of wish I didn't start unpacking these ideas because the original premise was so easy, but I'll go as far as I can from here. I think we're nearly at the end. 
+<br><br>
+The mind and social media are related in that they both exist in the information realm. 
+The mind uses processed memories and unprocessed memories in the form of generalities when simulating the world. The mind is simulating the world for the purpose of planning action and prediction. 
+<br><br>
+There is a clue to whats going on with social media in the name. Social, means that there is an attempt to take on the qualities of society. 
+Media, indicates externally generated fragments of ideas. The name social media indicates many people sharing fragments of ideas. 
+It doesn't take a genius to realise that this is a space that is open to political manipulation. 
+Especially considering the threshold for evidence is so low, that a screenshot is considered evidence of the guilt of an entire group of people. 
+<br><br>
+Social media uses an attention-seeking algorithm to lure people down slithers of a secondary reality. 
+These secondary realities are not predictive, just projections of one part of a user's self. 
+Whatever it is that your timeline shows, is an artificially generated reflection of your current interests and personal history, even if you don't know it. 
+However, the timeline you see is dependent on the algorithm's ability to read you. When the algorithm makes a mistake, it may show content that is irrelevant to your history and interests. 
+<br><br>
+Of course, compassionate and caring people dominate the public discussion on these platforms. Their opinions are not only safe to share publicly they can improve your social standing. 
+<br>
+But any space for competition brings competitive people to the party. 
+They begin to post increasingly compassionate content in an attempt to outdo one another. 
+This leads to an unconscious resentment building in the crowd. 
+They sense the scales have been tipped from the truth and social games are being played.  
+After all, we just can't care about everything, the world is too big. Sometimes you should just let a crisis stay as private and as local as possible so the people involved can sort it out.  
+<br><br>
+A million people trying to outdo each other in displays of increasingly absurd compassion usually only harms the people actually involved. 
+In comes a helpful person to tip public discourse back towards truth, but oh no! They used too much pressure. Now everyone's upset and they need to make an apology. 
+Meanwhile, the compassion competition campaign continues uninterrupted because no one is asked to apologize for compassion. 
+<br><br>
+</p>
+
+
+<div class = "screenshot">
+<p>
+<span class="headline hl3"><strong>Screenshot #11 The self correcting narrative of videos</strong><br></span><br><br>
+
+
+<br><br>
+---------<br>
+Cancer is bad<br>
+---------<br>
+Cancer is really bad<br>
+---------<br>
+Cancer is worse than Hitler's friend<br>
+---------<br>
+Cancer is worse than Hitler himself<br>
+---------<br>
+HITLER Explained: Using math to prove Hitler wasn't that bad. <br>
+---------<br>
+My Apology - A video where the last guy apologizes to anyone who wasn't following the context of the progression and thought he was just implying Hitler wasn't bad. <br>
+---------<br>
+Hitler is bad - The competitive people jump to defend the victim group generated by second last video and try to outdo one another. <br>
+---------<br>
+Hitler is really bad<br>
+---------<br>
+Hitler is worse than Louis CK<br>
+---------<br>
+CK VS HITLER: - the reasons to apologize go on. <br>
+---------<br>
+<br>
+</p>
+</div>
+
+
+<p>
+<br><br>
+This process will go on until all the causes with the good victim groups are taken. 
+Hopefully, after that, it'll taper off, because a competitive push to the frontiers of compassion to find groups to be compassionate towards is an absurd game in the long-term. 
+Eventually, the social media world, followed by the real world, will turn into a landscape of identity either sanctioned or unsanctioned by social media. 
+<br><br>
+Each time the mass of people agree a small underbelly of disagreers emerges. 
+Instead of posting publicly the heretics message in private chats, slowly building trust and developing their ideas. 
+Trust is required to form mutual expression of opinion when that opinion could be controversial. 
+Once an underbelly of disagreers is at the point of generating memes the building blocks of their ideas are shared publicly amongst increasing numbers of people using humor to make the unpalatable idea palatable.   
+<br><br> 
+Slowly in the social media timeline, these counter-ideas start to appear tentatively. 
+Eventually, someone takes it too far, and boom! 
+Massive apology in order, this can be a devastating blow to some careers. 
+But strangely not others. 
+<br><br>
+</p>
+
+<div class = "screenshot">
+<p>
+<span class="headline hl3"><strong>Screenshot #12 Thats about it</strong></span><br><br>
+
+------------<br><br>
+<strong>Person 1:<br></strong>
+	That'll do, I've said more than I wanted to say. <br>
+<strong>The Unconscious: <br></strong>
+	I think we made a good team.  <br>
+<strong>Person 1:<br></strong>
+	I guess we'll find out about that, worse comes to worst I'll just delete this article if it causes hassle. <br>
+<strong>The Unconscious: <br></strong>
+	Have you considered that none of your heroes would do that? Instead, they would let the article stand as something that was written early in their career and grow beyond it. <br>
+<strong>Person 1:<br></strong>
+	Yeah, well I'm going to get a few other opinions before I post it, there may be technical errors in the article which could be fixed before posting. <br>
+<strong>The Unconscious: <br></strong>
+	I say let it ride, the audience isn't seeking perfection. <br>
+<strong>Person 1:<br></strong>
+	If that's true I might have a chance, but I'm really not sure that this is what the audience wants. <br>
+------------<br><br>
+
+</p>
+
+
+
+</div>	</div>	</div>	
+<!-- End Article-->
+
+
+
+<!--About Recreate Meaning-->
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About</h2>
+        <img class="center" src="https://i.imgur.com/01ycE85.png" alt="" >
+        <p>We are trying to empower those who wish to live well through technology assisted problem solving. <a href="https://twitter.com/Recreatemeaning">Read more...</a><br> </p>
+    </div>
+
+<!--Popular/Related Posts-->
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><h4>Navigating Instability:</h4><p>Preparing for Shortages</p></div><br>
+      <div class="fakeimg"><h4>On the Origin of Ideas:</h4><p>Understanding algorithms</p></div><br>
+      <div class="fakeimg"><h4>The Money Problem:</h4><p>The Basics of Financial Strategy</p></div><br>
+    </div>
+
+<!--Social Media Links -->
+    <div class="card">
+      <h3>Social Media</h3>
+  	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer --> 
+<div class="footer">
+<div class="navbar">
+ <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+  <a href="#news">Mediator</a>
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="#" style="float:right">About</a>
+</div>
+</div> 
+
+
+</body>
+</html>
+
+
+
