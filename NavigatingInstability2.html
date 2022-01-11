@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  color: white; 
+}
+.fakeimg p {
+  color:black;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Text box light */
+.TextBoxLight {
+  background-color: #c7c7c7;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+}
+
+
+
+/* Text Box Dark */
+.TextBoxDark {
+  background-color: #333333;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+  color: #f0f0f0; 
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+/*Top Navigation Buttons */
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+}
+
+
+
+
+
+
+
+/*IMAGE*/
+
+
+
+
+img {
+ 
+  height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ width: 400px;
+}
+
+
+a {
+
+color:black;
+
+}
+
+
+
+
+
+}
+</style>
+</head>
+<!-- End of CSS -->
+
+
+<!-- Begin HTML -->
+
+
+
+
+
+<body>
+
+
+ <a href="https://aaronunify.github.io/RecreateMeaning/Homepage">
+<div class="header">
+  <h1>Recreate Meaning</h1>
+  <p>Technology assisted problem solving. </p>
+</div>
+</a>
+
+
+<!-- Navigation Bar Begins -->
+
+<div class="navbar">
+  <a href="https://aaronunify.github.io/RecreateMeaning/Homepage">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+ <!-- <a href="#news">Mediator</a> -->
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="https://aaronunify.github.io/RecreateMeaning/About.html" style="float:right">About</a>
+  <div class="dropdown">
+   <button class="dropbtn">Social Media 
+    <div class="dropdown-content">
+	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+   </button>
+</div>
+<!--     <div class="dropdown">
+   <button class="dropbtn">Articles
+    <div class="dropdown-content">
+      <a href="#">Economics</a>
+      <a href="#">Investing</a>
+      <a href="#">Philosophy</a>
+      <a href="#">Psychology</a>
+   </button>
+</div>-->
+</div>
+<!-- Navigation Bar ends -->
+
+
+
+
+
+<!-- Begin Article Headline and Preview -->
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Navigating Instability for Introverts</h2>
+      <h5>Don't tell the extroverts about this article, Jan 4, 2022</h5>
+      <img class="center" src="https://epsilon.aeon.co/images/e3834109-1e24-49cc-a1e6-18afb619a443/idea_sized-dt5254.jpg" alt="" >
+								
+
+
+	<p><strong>Quick, while no ones looking lets escape. </strong><br><br></p>
+
+
+<!-- End Article Headline and Preview -->
+
+
+<!-- Begin Article body  -->
+
+<p>I face the same struggles as most writers who are unknown, namely that no one reads what I write. This suits me because I'm introverted by nature and other people wear me down. But I also feel an obligation to share information if I think it could help someone. This article is a discussion of truth which I think may help other introverts find their place in this changing world.
+<br>
+First off if you're introverted, all of the other "Navigating Instability" strategies apply to you, this is an addition. If you're extroverted, feel free to read ahead, this may help certain types of introverts make sense to you. 
+<br>
+Personally, in my own psyche I'm a few competing things but one of my strongest natural tendencies is to seek a safe and mostly isolated space. I don't want exclusion, I just want to be left alone to do my own thing until I'm needed. Ideally I would have a situation where I could be given a task and left alone until it's finished. 
+<br>
+My introversion caused a lot of trouble for me initially, occasionally it still does but it's much more manageable now. My goal with this article is to formalise a strategy to set up your life so that extroverts will back off and let you do your thing. Because being introverted can be a source of advantage if you can wield it.
+<br><br>
+
+
+
+
+
+
+ <div class="TextBoxLight">
+		<h3>Three Types of Truth </h3>
+			<p>
+1. Personal-Truth: Information from lived experience.<br>
+2. Social-Truth: Information from others.<br>
+3. Natural-Truth: What exists without human intervention.<br>
+			</p>
+	</div>
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+The first thing to understand is that introverts have a different primary source of truth than extroverts. Extroverts outsource a lot of their thinking to other people by constantly asking questions. This fills them with social-truth and the confidence that their belief is the accepted answer shared by the group.
+<br>
+Introverts balance the cost of asking a question with the price of just figuring out the answer. The meme of the "social battery" has helped people understand that some of us have finite energy for socialising, but I'm not sure that people are aware that the cost of asking one question is often not worth paying for introverts.
+<br>
+My "social battery" is so finite, that I'll try figure out how to do things myself before I ask for help. I have enough intellect to get by, although figuring things out for myself slowed my progress compared to my peers initially.
+<br>
+Compared to extroverts, introverts gain a higher proportion of their understanding of the world from interacting with things and analysing their lived experience. Initially not asking for help handicaps a person, but with intellect and time, it turns to an advantage. Introverts are often thinking to themselves, Why was this built this way? Why did the writer include this? How can I do this? Is this possible without introducing another person to the process?
+<br>
+The internal asking and answering of questions lead to a self-dialogue where the unknowns of the past, present, and future are constantly made known. When an introvert lacks the required information they run experiments. By collecting facts about the nature of reality, the introvert builds a knowledge structure rich with natural truth.
+<br>
+Sometimes an introvert can discover something and gain the attention of the extroverts. This leads to the extroverts asking the introvert questions. How did you do that? Who told you to do it that way? Why did that even work? The introvert tries to share their answers, but often the extroverts find the answer difficult to grasp. This is because the introverts are drawing from a natural-truth and the extrovert is drawing from social-truth. 
+<br>
+Introverts are continually identifying natural-truth that is in opposition to some particular system of social-truth so they tend to hear the same speech about how even though their method has worked in this particular instance it's wrong because blah, blah, blah.
+<br>
+One of the dangers of being an introvert with a dash of intellect is that you will outgrow your culture. At first in small ways, then entirely. You then need to spend the rest of your life hearing about how you are wrong and a different belief system is correct. Sadly most people are pinned down by their culture for their entire lives, only updating their beliefs when the prevailing social-truth changes.
+<br><br>
+
+
+
+
+
+
+
+ <div class="TextBoxLight">
+		<h3>Dangers of Being Introverted. </h3>
+			<p>
+
+1. Development: Being a late bloomer, a never bloomer, or blooming into something that is considered heretical. <br>
+2. Vulnerability: Evil people often choose quiet people as their targets. <br>
+3. Exclusion: If you're not fun at parties, you don't get invited to parties. <br>
+			</p>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+It can be a hard time if your attention tends to drift inward. There is no shortage of people looking to take advantage of other people if they think they can get away with it. If an introvert is in your care, you need to give them the skills to protect themselves as well as teach them about the dangers of the world, because they're the ones most likely to slip through the cracks of social protection.
+<br>
+It's easy for people who are determined to control social-truth for their own purposes to run a successful gossip campaign against an introvert because the introvert is the most likely to be blind to people talking behind their back.
+<br>
+It's also easier for groups of bullies or worse to catch an introvert alone and out of sight because that's where the introvert wants to be. Aggressive people often back down when met with resistance and introverts are often the last to learn this. 
+<br>
+These situations often lead to a strong resentment for other people in introverts. A natural feeling of nervousness and exhaustion from dealing with people is coupled with a larger share of experiences with terrible people who seek vulnerable targets. Never safe in a group, never safe alone, being introverted is a positive feedback loop of isolation pushing introverts further and further outside of the regular social structure.
+<br>
+Not many people can leave society, especially if they're extroverted and relying on other people to fix their problems and provide answers. Even less likely to have the skills to survive outside of society is an extrovert running a social-truth that relies on destroying nature and taking advantage of the people in their network to function. With only rare exceptions natural-truth is more correct than social-truth, to the point of being correct enough to allow for survival in an isolated existence. 
+<br>
+Introverts are the ones who are most likely to figure things out well enough to minimise their reliance on other people. 
+<br>
+I know from being an introvert who likes to figure things out, that extroverts will ask you endless questions when they're not sure what's going on. It doesn't seem to matter how far away you are or how long it's been, eventually, they find you. What's happening in these situations is that they've encountered a problem, asked everyone they can think of and no one is providing a good answer. As they work through their personal network, they begin reaching out further and further.
+<br>
+Eventually, they call the weird guy (me).
+<br>
+I'm writing this additional part because introverts have two special roles in minimising the coming catastrophe. The first bit is easy to explain, population density has become a source of pandemic risk. Not just Covid but new diseases. Anti-biotics, hand-sanitiser, and anti-bacterial cleaners used at the current scale will eventually generate mutated and treatment resistant diseases.
+<br>
+I don't see us stopping the excessive use of hand-sanitiser and anti-bacterial cleaners until it's too late, Covid has made that a political impossibility. However, population density, I can do something about because a bunch of us introverts want to leave anyway. I'm proposing that we move rural, like really rural.
+<br>
+In the non-secret article I encourage people to leave the cities and move more rural. If I know extroverts, they'll move an hour out from the city.
+<br>
+For us introverts, I'm talking a move to the frontier. A rural life promises daily interaction with animals, plants, and machines with the added benefit of seeing fewer people. Plus the property is often less than a quarter the price of in the city.
+<br>
+For the great introvert migration to get underway we need to figure out how to make this work financially, I write an investment strategy in the non-secret article that will suffice for purchasing land. But making money off the land is its own trouble. Farming looks like a tough industry to crack although, the work on regenerative agriculture looks promising. It seems like a small scale, no mortgage operation is financially superior to a large-scale operation, that relies on debt and government subsidy to function.
+<br>
+It also seems that homesteading to reduce expenses while working online is the best way to manage the transition for the first few years. Renting weekend cabins to city people, or working a local rural job are also possible sources of income to diversify into.
+<br>
+Eventually, scaling up the homestead into a farming operation to protect society from any shortages should be our goal. We should grow a variety of crops, deliver some to the market fresh, preserve the rest by pickling, candying, turning into jam, brewing, fermenting, canning, etc. We must try to keep our operations nimble enough that a van or light truck is sufficient for our deliveries so we can keep costs low.
+<br>
+While we're at it we need to reintroduce animals into agricultural systems, to produce meat and eggs, while grazing and eating unwanted insects. Our animals will turn unwanted plant matter, into waste, and back to soil. Speaking of animals, bees are in trouble and without enough of the little guys pollinating plants we're all going to die. So we should plant flowers and keep beehives for honey.
+<br>
+If we can figure out farming without disrupting nature we will be doing society a major favour. The current methods of large-scale food production, are far from perfect. Pollution, topsoil damage, the vulnerability of crops to disease, and natural disaster are among the list of concerns. Currently, these methods are putting food on the table, but it's not clear that there will be enough for all of us indefinitely. From my reading, I believe time will show that the scale of modern agriculture was too prone to systemic risk.
+<br>
+But this doesn't stop us from earning income by using a portion of our land for a private campground, wilderness lodge, hunting/fishing grounds, 4WD/Motorbike track, or something of the sort to help pay the bills. It's also worth knowing that governments pay subsidies for farming research.
+<br>
+So, I would like to begin the process of decentralising food production by reducing the population density of urban areas. If modern agriculture is on a collision course with major shortages and the cities are on a collision course with new diseases we ought to do what we can to help. If we don't act now we won't be able to do much when either catastrophe arrives, likely we'll be locked down in our houses and some nerd will make producing food illegal.
+<br>
+But we'll be waiting, our plants in the ground, our greenhouses full, our orchards thriving and our animals healthy and antibiotic-free. Because that's the other major benefit to small scale production. You can produce with minimal antibiotics, if we can produce food with as few antibiotics as possible we'll slow the evolution of antibiotic-resistant diseases.
+<br>
+Before we become part of societies safety net, we've got a lot to figure out. But, you've got the internet so you should be all good. I'll see you out there.
+<br>
+<br>
+
+
+
+
+
+
+ <div class="TextBoxLight">
+		<h3>The purpose of Introverts.</h3>
+			<p>
+
+1. Unfiltered-Observation: Some introverts develop into beings imbued with natural-truth capable of seeing things for what they are.<br>
+2. Prophecy: Introverts see the future clearest.
+3. Broadcast: Society is a game of Chinese whispers that starts with an introvert noticing something interesting.<br>
+4. Enders of Falsehood: Introverts don't broadcast incorrect social-truth. <br>
+5. Guide to Death: Introverts create structures that continue without them. <br>
+			</p>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+Introverts are adapted to both death and nature. Natural-truth is what exists without your intervention, natural-truth can be used to serve human interest through the development of technology and systems. Nature offers cycles that replenish the land with resources and energy. Operating from within those cycles allows for sustainability.
+<br>
+Nature is already automated, and our technology tends towards automation. If we can work within the natural balance our systems will outlive us. As introverts are the generators of social-truth, we can rebuild the world to be within natural cycles.
+<br>
+If you have hermit aspirations, you won't be around earlier than most. Not due to death, but due to choice. This creates an incentive to ensure the people you care about are as independent as possible. Share the philosophical systems embued with natural-truth whenever asked. The extroverts will share them with each other. If your system is insufficient, the extroverts will just ask another introvert. 
+<br>
+Revelations about the way things are structured are more likely to appear from an observation of how things are if you're not there. So therefore you should leave and observe. Become a student of nature while society unfolds. If society is unfolding in violation of natural-truth the people engaging in society will be harmed. This will make them seek answers leading the people who need your answers to you.
+<br>
+Do not try to spread your wisdom early, wait for those who seek. You want to give your wisdom maximal time to mature and for your audience to be as eager as possible. Otherwise, you face an uphill battle against extroverts desperately clinging to unearned authority which they will try to wield against you. When the demand for natural-truth is high don't be afraid to repeat yourself. Simple ideas often take many cycles to stick.
+<br>
+When the demand has faded, do not cling to fame and authority. Exit the system as soon as it's safe to do so and return to nature. Receiving the admiration of society tends to corrupt those who are guided by natural-truth.
+<br> 
+</p>
+
+
+</div>
+</div>	
+<!-- End Article-->
+
+
+<!--About Recreate Meaning-->
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About</h2>
+        <img class="center" src="https://i.imgur.com/01ycE85.png" alt="" >
+        <p>We are trying to empower those who wish to live well through technology assisted problem solving. <a href="https://twitter.com/Recreatemeaning">Read more...</a><br> </p>
+    </div>
+
+<!--Popular/Related Posts-->
+    <div class="card">
+      <h3>Popular Post</h3>
+
+ <a href="https://aaronunify.github.io/RecreateMeaning/NavigatingInstability.html">
+      <div class="fakeimg"><h4>Navigating Instability:</h4><p>Preparing for Shortages</p></div><br>
+</a>
+
+<a href="https://aaronunify.github.io/RecreateMeaning/OnTheOriginOfIdeas.html">
+      <div class="fakeimg"><h4>On the Origin of Ideas:</h4><p>Understanding algorithms</p></div><br>
+</a>
+
+ <a href="https://aaronunify.github.io/RecreateMeaning/TheMoneyProblem.html">    
+ <div class="fakeimg"><h4>The Money Problem:</h4><p>The Basics of Financial Strategy</p></div><br>
+    </div>
+</a>
+
+
+<!--Social Media Links -->
+    <div class="card">
+      <h3>Social Media</h3>
+  	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer --> 
+<div class="footer">
+<div class="navbar">
+ <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+  <!-- <a href="#news">Mediator</a> -->
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="https://aaronunify.github.io/RecreateMeaning/About.html" style="float:right">About</a>
+</div>
+</div> 
+
+
+</body>
