@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  color: white; 
+}
+.fakeimg p {
+  color:black;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Text box light */
+.TextBoxLight {
+  background-color: #c7c7c7;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+}
+
+
+
+/* Text Box Dark */
+.TextBoxDark {
+  background-color: #333333;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+  color: #f0f0f0; 
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+/*Top Navigation Buttons */
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+}
+
+
+
+
+
+
+
+/*IMAGE*/
+
+
+
+
+img {
+ 
+  height: auto;
+}
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+
+
+.center1 {
+  display: block;
+  width: 350px;
+}
+
+
+a {
+
+color:black;
+
+}
+
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: right;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size:20px;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: -40px;
+  left: 50px;
+  text-align: right;
+}
+
+.bottom-left1 {
+  position: absolute;
+  bottom: -40px;
+  left: 120px;
+  text-align: right;
+}
+
+
+.bottom-left2 {
+  position: absolute;
+  bottom: -40px;
+  left: 100px;
+  text-align: right;
+}
+
+
+}
+</style>
+</head>
+<!-- End of CSS -->
+
+
+<!-- Begin HTML -->
+
+
+
+
+
+<body>
+
+
+ <a href="https://aaronunify.github.io/RecreateMeaning/Homepage">
+<div class="header">
+  <h1>Recreate Meaning</h1>
+  <p>Technology assisted problem solving. </p>
+</div>
+</a>
+
+
+<!-- Navigation Bar Begins -->
+
+<div class="navbar">
+  <a href="https://aaronunify.github.io/RecreateMeaning/Homepage">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+ <!-- <a href="#news">Mediator</a> -->
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="https://aaronunify.github.io/RecreateMeaning/About.html" style="float:right">About</a>
+  <div class="dropdown">
+   <button class="dropbtn">Social Media 
+    <div class="dropdown-content">
+	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+   </button>
+</div>
+<!--     <div class="dropdown">
+   <button class="dropbtn">Articles
+    <div class="dropdown-content">
+      <a href="#">Economics</a>
+      <a href="#">Investing</a>
+      <a href="#">Philosophy</a>
+      <a href="#">Psychology</a>
+   </button>
+</div>-->
+</div>
+<!-- Navigation Bar ends -->
+
+
+
+
+
+<!-- Begin Article Headline and Preview -->
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Investing 2: Podcast Companion Article</h2>
+      <h5>Getting organised at the individual level, 17th January, 2022</h5>
+      <img class="center" src="https://i.imgur.com/owmj2XK.png" alt="" >
+								
+
+
+	<p><strong>Resolving bottlenecks:</strong><br><br>
+Resolving bottlenecks pushes you into new territory with opportunities that were previously unavailable. 
+	</p>
+
+
+<!-- End Article Headline and Preview -->
+
+
+<!-- Begin Article body  -->
+<br><br>
+<strong>Recap of previous lesson:</strong>
+<br><br>
+Being able to identify inefficiency, ineffectiveness and risk at the local level is the foundation of investing. 
+<br><br>
+Prioritising local sources of inefficiency, ineffectiveness and risk keeps you most effective. 
+Increasing the probability that the results of your efforts primarily reward and protect you. 
+<br><br>
+
+By sorting out all the small local problems, you’ll become aware of the bottlenecks that prevent your advancement. 
+Resolving bottlenecks doesn’t just clean up your experience, it pushes you into new territory with opportunities that were previously unavailable. 
+<br><br>
+
+<br>
+<strong>Step 1: Get organised on the local level starting with time. </strong>
+<br><br>
+
+One of the first steps to organising your life is to organise your time. First you record/estimate how you spend your time each week. For this to be effective, you need to do this as honestly as possible. 
+<br><br>
+I’ll link to an excel template but as I’m talking just imagine a table with monday-sunday across the top and midnight to midnight running down the page. 
+<br><br>
+Fill in the hours with their associated tasks. Record sleep, work, study, meals, video games, cleaning, gym, rest, netflix, social media, YouTube, intoxication/hangover time. 
+<br><br>
+Then list every possible recurring task that will have a negative impact on your future if you forget. For example, feeding the cat, medication, or paying rent. 
+<br><br>
+Especially make sure to write all the weekly tasks that you have ever forgotten in the past. 
+<br><br>
+<div class = "center">------------------------------------------</div> 
+<br><br>
+Once your standard week has been recorded highlight the unproductive tasks using the red colours. Unproductive tasks are non-essential tasks that do not have a positive effect, potentially a negative effect on your future. 
+<br><br>
+Then colour the productive tasks using a blue colour. These are tasks that have a positive effect on your future. 
+<br><br>
+Swap red tasks for blue tasks where possible. But try to design a week that you would want to have. 
+<br><br>
+The best way is to combine reds with blues. Like working out or folding laundry while watching Netflix. Alex Bernier @mythoughtfood on Twitter offers many exercises related to pain from excess sitting and standing that can be done while watching Netflix. 
+<br><br>
+Another example is listening to audiobooks while playing video games. Don’t underestimate the value of listening to one book. In case you're not sure where to begin, I’ll offer a path. 
+<br><br>
+
+
+
+   <div class="TextBoxLight">
+
+<h3>A short course in reality that can be taken while playing video games. </h3>
+<br>
+Fooled by Randomness - Nassim Taleb<br>
+Basic Economics, Fifth Edition - Thomas Sowell<br>
+The Investors Podcast Episode 1 - Warren Buffett Investing Basics<br>
+The Black Swan - Taleb<br>
+Restoration Agriculture - Mark Shepard<br>
+Anna Karenina - Tolstoy<br>
+Blueprint for Armageddon* - Dan Carlin - podcast<br>
+Skin in the Game - Taleb<br>
+The Gulag Archipelago - Solzhenitsyn<br>
+Personality and its transformations 2017 - Jordan Peterson - youtube series<br>
+The Almanack of Naval - Eric Jorgenson and Tim Feriss<br>
+<br><br>
+*during the podcast I said "Death Throes of the Republic" but I meant to say "Blueprint for Armageddon", ultimately I do recommend both. 
+
+
+</div>
+
+<br><br><br>
+Don't overdo it, small sustained changes are the key to success. If you’re already tired, more time spent being productive is likely to wear you out before you enjoy the benefits.  
+
+<br><br><br>
+<strong>Step 2:  Budget</strong> 
+<br><br>
+Identify how you’re spending your money. Find out whether or not there is any left over at the end of the week. 
+<br><br>
+Do the same thing you did with your time, with your money. 
+<br><br>
+Identify the worst of your spending and see if you can minimise it or swap it for spending that will positively impact your life. 
+<br><br>
+On the template identify all your expenses and add them to the table. The table tells you how much money you could save if you continued at your current rate. If the number is very low or negative, consider changing your spending or making the choices necessary to increase your income. 
+<br><br>
+
+<strong>Step 3: Phone</strong> 
+<br><br>
+Try and identify the worst things about your phone and minimise them. Remove all push notifications that are unnecessary. Do not allow negative energy on social media to spill into your life. Swap mindless social media for more productive social media. It doesn’t need to be boring, you just need to find content makers for the productive things that you like. 
+<br><br>
+Calendar and banking apps are your friend, so is Unify. Input all your recurring tasks and events into google calendar. This helps to schedule the unallocated time effectively. 
+For your money, set up automatic transfers from your main account into sub-accounts. Name these sub accounts, house, car, food, school, etc. For these new sub accounts take advantage of direct debit so that you don’t need to remember to pay bills. 
+<br><br>
+The next app to download is Unify. Unify can help you handle the unexpected sources of negative emotion in your life. 
+<br><br>
+
+<strong>Step 4: Diet. </strong> 
+<br><br>
+This one is really important for energy and health. Look at what you’re eating and drinking and apply the same process. 
+<br><br>
+If you’re too heavy identify the highest calorie items in your diet and see if you can minimise them. For example swap a double quarter pounder for a regular quarter pounder. See if you miss the calories. 
+<br><br>
+If you drink soft drinks, water it down with green tea and ice. Start to incorporate lemon, mandarin etc until you no longer drink soft drinks. 
+<br><br>
+Try to avoid big meals unless your goal is to become sleepy. Big meals are always mistakes. 
+<br><br>
+Often you're not eating the best version of things. 
+Swap your everyday food items for higher quality versions of that food. Grass fed vs grain fed beef is a good example. 
+Joel Salatin participated in a study where factory eggs were found to be less nutritious than eggs from a grass based farm. Including key minerals that are responsible for mental stability. 
+<br><br>
+For breakfast consider a high protein and fat meal. This will reduce your cortisol having a positive effect on mood and helps you keep your blood sugar stable. 
+<br><br>
+Swap lollies for fruit. For example, cvherries and grapes are said to be good at fighting inflammation and when they are high quality they taste as good lollies. Sure they have sugar but they also have the added bonus of containing vitamins and water. 
+<br><br>
+<div class = "center">------------------------------------------</div> 
+<br><br>
+This kind of process can take years but it will put you in a more stable position. In investing long term returns are the surest way to riches but you need to stay stable for long enough to reap the benefits. 
+</p>
+
+
+</div>
+</div>	
+<!-- End Article-->
+
+
+<!--About Recreate Meaning-->
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About</h2>
+        <img class="center" src="https://i.imgur.com/01ycE85.png" alt="" >
+        <p>We are trying to empower those who wish to live well through technology assisted problem solving. <a href="https://twitter.com/Recreatemeaning">Read more...</a><br> </p>
+    </div>
+
+
+<!--Popular/Related Posts-->
+    <div class="card">
+      <h3>Popular Posts</h3>
+
+
+
+<a href="https://aaronunify.github.io/RecreateMeaning/NavigatingInstability.html">
+	<div class="container">
+        	<img class="center1" src="https://i.imgur.com/mVb9kPw.png" alt="" >
+			<div class="bottom-left1"><p><strong>Navigating Instability: </strong><br>Preparing for Shortages</p><br></div>
+	</div>
+</a><br>
+
+<a href="https://aaronunify.github.io/RecreateMeaning/OnTheOriginOfIdeas.html">
+	<div class="container">
+       		 <img class="center1" src="https://i.imgur.com/Dc8cUKs.png" alt="" >
+			<div class="bottom-left2"><p><strong>On the Origin of Ideas:</strong><br>Understanding Algorithms</p><br></div>
+	</div>
+</a><br>
+
+
+	<div class="container">
+        	<img class="center1" src="https://i.imgur.com/BXweoV9.png" alt="" >
+			<div class="bottom-left"><p><strong>The Money Problem: </strong><br>The Basics of Financial Strategy</p><br></div>
+	</div>   
+</a>
+
+ </div>
+	   
+<!--Social Media Links -->
+    <div class="card">
+      <h3>Social Media</h3>
+  	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer --> 
+<div class="footer">
+<div class="navbar">
+ <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+  <!-- <a href="#news">Mediator</a> -->
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="https://aaronunify.github.io/RecreateMeaning/About.html" style="float:right">About</a>
+</div>
+</div> 
+
+
+</body>
