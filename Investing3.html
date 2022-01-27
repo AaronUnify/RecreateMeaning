@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  color: white; 
+}
+.fakeimg p {
+  color:black;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Text box light */
+.TextBoxLight {
+  background-color: #c7c7c7;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+}
+
+
+
+/* Text Box Dark */
+.TextBoxDark {
+  background-color: #333333;
+  width: 100%;
+  padding: 20px;
+  border: 2px;
+  font-family: Times New Roman;
+  color: #f0f0f0; 
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+/*Top Navigation Buttons */
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+}
+
+
+
+
+
+
+
+/*IMAGE*/
+
+
+
+
+img {
+ 
+  height: auto;
+}
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+
+
+.center1 {
+  display: block;
+  width: 350px;
+}
+
+
+a {
+
+color:black;
+
+}
+
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: right;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size:20px;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: -40px;
+  left: 50px;
+  text-align: right;
+}
+
+.bottom-left1 {
+  position: absolute;
+  bottom: -40px;
+  left: 120px;
+  text-align: right;
+}
+
+
+.bottom-left2 {
+  position: absolute;
+  bottom: -40px;
+  left: 100px;
+  text-align: right;
+}
+
+
+}
+</style>
+</head>
+<!-- End of CSS -->
+
+
+<!-- Begin HTML -->
+
+
+
+
+
+<body>
+
+
+ <a href="https://aaronunify.github.io/RecreateMeaning/Homepage">
+<div class="header">
+  <h1>Recreate Meaning</h1>
+  <p>Technology assisted problem solving. </p>
+</div>
+</a>
+
+
+<!-- Navigation Bar Begins -->
+
+<div class="navbar">
+  <a href="https://aaronunify.github.io/RecreateMeaning/Homepage">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+ <!-- <a href="#news">Mediator</a> -->
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="https://aaronunify.github.io/RecreateMeaning/About.html" style="float:right">About</a>
+  <div class="dropdown">
+   <button class="dropbtn">Social Media 
+    <div class="dropdown-content">
+	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+   </button>
+</div>
+<!--     <div class="dropdown">
+   <button class="dropbtn">Articles
+    <div class="dropdown-content">
+      <a href="#">Economics</a>
+      <a href="#">Investing</a>
+      <a href="#">Philosophy</a>
+      <a href="#">Psychology</a>
+   </button>
+</div>-->
+</div>
+<!-- Navigation Bar ends -->
+
+
+
+
+
+<!-- Begin Article Headline and Preview -->
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Investing 3: Podcast Companion Article </h2>
+      <h5>Doing well in the workplace, Jan 28, 2022</h5>
+      <img class="center" src="https://i.imgur.com/8bibNUr.png" alt="" >
+								
+
+
+	<p><strong>Climbing the hierarchy... </strong><br><br>
+
+	...by becoming the best version of yourself. </p>
+
+
+<!-- End Article Headline and Preview -->
+
+
+<!-- Begin Article body  -->
+
+<p> 
+I’ll assume that after the previous episode you’ve got some stability. Now the goal is to gain the skills to navigate and improve functioning systems. The goal of this podcast is to develop a foundation of knowledge to outperform in the workplace. 
+<br><br>
+When you start in a new position you will probably be assigned a supervisor. This is to make sure that your lack of experience doesn’t create a catastrophe. Eventually you’ll repeat the day-to-day processes enough times that you no longer require constant supervision. Once you have enough experience you’ll be assigned supervisor duties yourself. 
+<br><br>
+So long as you keep the quality of your work high you should be free from interruptions from a supervisor. This next level of interuptions will come from a manager deciding that a change in day-to-day processes is necessary to keep the organisation successful. 
+<br><br>
+Managers will make these decisions based on internal measures of performance or a changing landscape external to the business. Most businesses have managers and most businesses will eventually go bankrupt, often a series of mistakes made by management are to blame. It’s incredibly difficult to react to a changing market on behalf of an organisation. Adding to the difficulty, changing the day-to-day processes of an organisation tends to cause a cascade of unexpected side-effects that fall outside of anyones designated responsibility. 
+<br><br>
+<strong>Managers either burn out or ascend</strong>
+<br><br>
+There is another mechanism that is hiding in plain sight. A person in a manager role becomes responsible for all of the problems that emerge. A manager was likely selected for their ability to successfully deal with day-to-day problems. The role gives them a chance to develop experience dealing with a wide array of novel problems. Over a short time period they may solve 1000 unique problems relating to the businesses. Eventually a manager gains the necessary experience to operate in the industry independent of the organisation. At this point the manager can consider starting their own businesses, or purchasing one close to where they want to live.  
+<br><br>
+A common mistake is to select a manager their ability to thrive in the day-to-day. A person who likes routine and stability makes a poor manager. Every system is in a constant space of collapse and repair. The managers job is to deal with the chaos so that the day-to-day can function. A manager must turn their attention to the problems that have emerged and the problems that are capable of emerging. It's a stressful role if you're doing it right. 
+<br><br>   
+With a competent manager employees can run their day-to-day tasks without interruption from problems because the organisation is stable on a day-to-day level. If the manager is making this look easy people begin to wonder what the manager actually does. 
+<br><br>
+A simple rule is to never assume you can do someone elses job better than them. Instead focus on developing the necessary competence to be offered increased responsibility. I'll help you set up a strategy so that if your organisation doesn't promote and give you a chance to grow you can just buy a business and run that. 
+<br><br>
+This is all made extra confusing by the fact that there are many, many, many, uneccesary and harmful managers in the world. Reality is confusing like that, some of us are striving for progress others are striving for power. If a manager can hold a position of power in an institution they can use the power of the institution for their personal benefit, this attracts a certain personality type.  
+<br><br>
+<div class="TextBoxLight" >
+		<h3>James Burnham: The Managerial Revolution 1941</h3>
+			<p>"The state—that is, the institutions<br>
+which comprise the state—will, if we wish to put it that way, be the<br>
+“property” of the managers. And that will be quite enough to place them in<br>
+the position of ruling class."<br>
+<br>
+In 1941 Burnham published a book highlighting the economic paradigm shift that was occuring not just in Lenninist-Stalinist and Facist-Nazi-ist societies, but also in Technocratic society and in the "new deal" USA. 
+Roughly speaking, nations were incentivise to increasingly organise on the national level in response to the Industrial Revolution, Great Depression, and World War 2. 
+The corresponding aggregating of assets on a national level required sophisticated networks of organisation. 
+This created a new class of management to sync the actions of the new economic machine.  
+The sheer quanitity of capital these state and national institutions had under control was far beyond what a an individual could amass in a lifetime of toil. 
+This attracted many power hungry people who wished to use these advantages of these positions for their personal gain.  
+<br><br>
+
+"At the present time, these institutions and beliefs<br>
+are undergoing a process of rapid transformation. The conclusion of this<br>
+period of transformation, to be expected in the comparatively near future,<br>
+will find society organized through a quite different set of major economic,<br>
+social, ad political institutions and exhibiting quite different major social<br>
+beliefs or ideologies. Within the new social structure a different social<br>
+group or class—the managers—will be the dominant or ruling class."<br>
+<br>
+Understanding the world within its historical context can help prevent from accidentally partaking in the destruction of society for the benefit of the individual... and make you a more effective manager. 
+
+</p>
+</div>
+<br><br>
+<strong>How to help your manager</strong>
+<br><br>
+Managers are often very busy, problems have a tendency to emerge in clusters. Here's what to do if you discover a problem and you could fix yourself but you're unsure as to whether or not you're overstepping. Approach your manager and succinctly lay out the problem, but tell them you can handle it and lay out your solution. If they accept then go and do what you said you would do and if you're successful you'll have raised your standing. 
+<br><br>
+The reason to develop competence isn't just to raise your standing and increase your job security. It's because useful people have opportunities outside of what’s given. If you can manage someone elses business you’re pretty close to being able to manage your own. If you use your work hours to excel in the day-to-day and increasingly solve complex and novel problems you’ll grow as a person. If outside of work you’re developing additional skills and social connections you should be able to provide for yourself independent of any organisation. 
+<br><br>
+Additional effort beyond your day-to-day responsibilities is a double-edged sword. It’s much easier to make things worse than it is to make things better even if you have good intentions. As a cog in a machine, doing anything other than the day-to-day tasks required of your role is likely to cause unexepected harm. Unexpectedly going above and beyond in a low level role turns the spotlight of attention on you and this can harmful to your job security. Standing out is likely to get you in trouble unless the benefits of your actions are very clear. 
+<br><br>
+Here if offer a method for intervening that should work for most systems. Always start with the smallest problem and work your way up to more complex problems. Often to solve a complex problem you need to remove the burden of few small problems and then take advantage of the momentum and resulting free time and energy to attack the big problem. 
+<br><br>
+
+<div class="TextBoxLight" >
+		<h3>A system for interacting with complex systems with a social element. </h3>
+			<p>
+
+1. Identify how the system reduces unnecessary suffering. This is the primary goal of the organisation in terms of removing a known bad from the world.
+<br><br>
+<li>A restaurant provides food to hungry people, A mechanic fixes a broken car. </li>
+
+<li>If you're able to state how your actions were to prevent some suffering you can minimise any damage to your reputation if something goes wrong.  </li>
+<br><br><br>
+2. Identify the appropriate measures of performance for the system 
+<br><br>
+<li>Profit + Positive Reviews + Human Flourishing of the members inside and outside the system.</li>  
+<br><br><br>
+3. Identify the modules of the system using categorization; identify the purpose of each module concerning the primary goal of the system. 
+<br><br>
+<li>Governments/businesses have departments, each department has people with specialised roles.  Know everybody's role and how they’re meant to be reducing suffering. </li>
+<br><br><br>
+4. Identify the primary and secondary processes of the modules in the system. Note the crucial processes, but do not attempt to label the non-crucial processes.
+<br><br>
+<li>Have the humility to admit you might not know if a task is non-crucial. Don’t expect everyone to fill their days with work that you approve of. Someone doing a task in a low effort way may be to conserve energy for an upcoming high-energy task. If it doesn't affect you leave it be.  </li>
+<br><br><br>
+5. Identify how the modules are integrated within the system and the external world. 
+<br><br>
+<li>Every business has stakeholders, customers, employees, loved ones of employees, neighbours, competitors, government do not cause unnecessary suffering for the stakeholders. Where the business does not integrate with the external world do your best to smooth the edges. </li>
+<br><br><br>
+6. Starting with crucial primary processes, identify ineffectiveness, inefficiency, and fragility. Identify capital thresholds and bottlenecks relating to achieving the primary purpose of the system. Bottlenecks and capital thresholds are similar in this context. 
+<br><br>
+<li>Remember a capital threshold is a limit in a process that can be crossed through the addition of a new piece of equipment or adding additional people.</li> 
+
+<li>A bottleneck is a limit in a process that can be resolved using strategy to become more efficient. </li>
+<br><br><br>
+7. Identify practitioner information for solving ineffectiveness, inefficiency, and fragility, prioritising the capital thresholds and bottlenecks. 
+<br><br>
+<li>Accessing other people's experience can be very effective, but it requires faith. </li>
+
+<li>If someone has more experience than you but is generally disliked, there may be some problems with their methods or their personality.  Proceed with caution. </li>
+
+<li>Alternatively, if something is your responsibility and someone with more experience who is busy and doesn’t understand the situation fully offers a solution that isn’t quite right don’t blindly enact it. </li>
+<br><br><br>
+8. If multiple practitioner-inspired economic interventions are available, consider what the identified solution is addressing (e.g., risk) and consider what each practitioner's intervention is going to introduce to the system (inefficiency, ineffectiveness, or risk). Only implement solutions that offer a net gain to the system. Implement the solution that moves you closer to removing bottlenecks or crossing positive capital thresholds. 
+<br><br><br>
+9. Evaluate the results of your Economic intervention using feedback generated in terms of comparing the negative side effects of the intervention with the success, unexpected success. 
+<br><br><br>
+10. Use the feedback generated to optimise Economic intervention if necessary. In preparing for next time a similar situation emerges consider any capital thresholds relevant to the situation. 
+<br><br><br>
+<li>After running this system for a time I hope you clearly see the difference between solving problems within the context of a functioning system and blindly reacting to problems with whatever solution comes to mind. </li>
+<li>Use the feedback from your actions to evaluate the types of success your solutions are generating. Success unexpected is the highest quality solution there is. The constant emergence of unexpected success indicates that your actions have a wisdom that you don’t quite understand. This gives you a chance to learn from your success rather than your failure. </li>
+<br><br><br>
+</p>
+</div>
+
+<br><br>
+
+<div class="TextBoxLight" >
+		<h3>Types of success </h3>
+			<p>
+<br>
+Types of success
+<br>
+<br>(Success, Expected) = Fruition: the realisation or fulfilment of a plan or project.
+<br>(Failure, Expected) = Sabotage: deliberately destroy, damage, or obstruct.
+<br>(Failure, Unexpected) = Mistake: an act or judgement that is misguided or wrong.
+<br>(Success, Unexpected) = Serendipity: the occurrence and development of events by chance happily 
+<br><br>
+
+</p>
+</div>
+<br><br>
+Lets use the rest of this article to conder two more mechanisms that are generators of systemic risk. 
+The first mini essay is called the hierarchy problem. This mini-essay is on a source of risk that is present in every hierarchy which can only be minimised. 
+The second mini-essay lays our a framework for aligning our incentives and emotions with our organisational interests. 
+I realise at this point this article has ran a little long. I hope you've found these ideas useful. 
+<br><br>
+
+
+<div class="TextBoxDark" >
+		<h3>The Hierarchy Problem </h3>
+			<p>
+
+It is well understood that incentives within a group can create systemic risk for the entire group.
+<br><br>
+For example, it is common for employees to have specific information regarding why elements of a business strategy are suboptimal but not report it to their manager. There can be many reasons for an employee not to speak up but it’s enough to focus on two reasons. Firstly, there is the risk of being wrong. Secondly, pointing out things that are wrong can make you dislikeable to your peers and superiors even if you’re correct. 
+<br><br>
+If the employee does choose to point out a flaw in the business strategy, the manager might not pass the information up the hierarchy. Meaning the employee risked making themselves dislikeable for zero payoff. This is only part of the risk of speaking up. 
+<br><br>
+If the manager does pass the information up the hierarchy there is a probability their boss is unconvinced, perhaps due to lack of specialised information, and both the employee and the manager have risked making themselves dislikeable for zero payoff. 
+<br><br>
+If the boss is convinced there is a probability that the strategy is unchangeable at that point in time. This means that the employee and the manager risk being dislikeable to the convinced boss for zero payoff. 
+<br><br>
+If the boss does implement the altered strategy there is still the risk that the new strategy is inferior to the old strategy. Coupled with the risk that even if the new strategy is superior the implementation may be faulty. 
+<br><br>
+In a hierarchical system, these probabilities generate systemic risk to the organisation by increasing the likelihood that a suboptimal strategy with the information available is being pursued. 
+<br><br>
+
+(p)incentive defying action being taken = 1 - (p)employee speaking up - (p)manager speaking up - (p)boss being convinced - (p)strategy being revised - … etc.
+<br><br>
+The taller a hierarchy grows the greater probability of generating systemic risk due to incentives. 
+<br><br>
+To minimise unnecessary growth in hierarchy authority should only be granted to the competent and ethical when their ability offsets the gain in systemic risk. 
+<br><br>
+As much decision making power possible should rest with people who have localised information in the domain under question. This decision making power can be supplemented using information from higher in the hierarchy or outside sources where effective. 
+<br><br>
+There is an additional force outside of this schema that plays a significant role in this equation, 'scarcity of attention'. If the employee approaches the manager with a problem that is outside of their priorities it is unlikely to receive any attention. 
+<br><br>
+Where possible the employee should solve the problem using specialised information from their experience without invoking someone higher in the hierarchy. Consider that doing this unsuccessfully justifies the hierarchy. Whereas doing this successfully is antagonistic to the idea of hierarchy. 
+<br><br>
+<strong>Sabotage</strong>
+<br><br>
+When the failure of someone above on the hierarchy has a chance to reshuffle the hierarchy the incentive to sabotage emerges. 
+Be aware of this danger when you ascend any hierarchy, but never use this tactic to ascend. 
+A manager who ascends using this tactic is very unlikely to have the character required to wield power. 
+They will find themselves in a position where they have to sabotage the people below them on the hierarchy that are gaining in competence in order to maintain there position of power.  
+<br>
+
+
+</p>
+</div>
+
+
+
+<br><br>
+
+
+
+<div class="TextBoxDark" >
+		<h3>REBUILDING BROKEN SYSTEMS </h3>
+			<p>
+				I propose that a system of individuals using their incentives and emotions as indicators to guide their actions is superior to a top-down authority dictating their actions based on flawed measurements. 
+<br><br>
+
+2.
+<br><br>
+Recall the hierarchy problem. The taller the hierarchy, the lower the circulation of relevant information. The solution I proposed was to only grant authority to those who offset the gain in systemic risk by being ethical and competent. 
+<br><br>
+The limit is that beyond a certain level of complexity no single human is capable. A decentralised source of intelligence and decision-making is required. 
+<br><br>
+
+3. 
+<br><br>
+The world is large and infinitely complex. By comparison, individual humans are small with limited understanding. Despite this, we are nature's best answer to complexity on the global level. 
+<br><br>
+The positive and negative emotion systems in humans are highly sophisticated and are optimised to the individual level. Simply said, no one knows what you're feeling better than you do. 
+<br><br>
+Our emotional systems are innate and calibrated from our experience. If we ignore our emotions we decay our ability to anticipate our reaction to hypothetical events. This is dangerous because we use our anticipated reaction hypothesising preferable and non-preferable futures.
+<br><br>
+Anticipating our reaction to potential futures gives us the ability to identify specific targets to aim for and away from. Allowing us to positively and incrementally alter our lives through strategic goal-setting. 
+<br><br>
+
+4.
+<br><br>
+Due to our knowledge being finite, uncertainty is always in play. Whether a goal has been correctly identified and the methods enacted are sufficient is unknown until hindsight is developed. 
+<br><br>
+Fear of uncertainty can be paralysing. Taking any action requires acceptance of some level of uncertainty. Because our knowledge is finite we cannot estimate the potential effects of our actions. The risk of making an error on a systemic level is always present. To best solve this issue we can use emotion as a proxy to certainty. 
+<br><br>
+
+5.
+<br><br>
+Experiences are positive or negative. A positive experience is when things went to plan, validating your knowledge structure. A negative experience is to fail in an unexpected way. 
+<br><br>
+It is possible to fail without having a negative emotional experience. An example of this would be being unsuccessful when taking a risk with a known low probability of success. For example, if there is a job vacancy with only 1 position and 100 qualified applicants there will be 99 ‘failures’. It would be unwise to consider failure in these types of situations as being indicative of a flaw in your knowledge structure. 
+<br><br>
+The overall ratio of positive to negative experiences in your life matters because this ratio serves as an involuntary estimate of your performance as a person and the result is delivered as emotion. Specific events can generate specific reactions. However, if you have a high amount of negative to positive experiences you will develop a general anxious or depressed mood. Over time an excess of negative experience will erode your self-confidence because consistent failure signals that your knowledge structure is invalid. 
+<br><br>
+As a general rule to improve your life efficiently, alter the ratio of positive to negative events by identifying ways to swap negative experiences for positive experiences. Just like how negative experiences increase systemic risk, positive experiences increase the probability of gaining systemic benefits such as motivation, resilience and self-confidence.
+<br><br>
+
+Swapping negative for positive is ideal because your mind is most effective at developing solutions to problems. 
+<br><br>
+
+
+6.
+<br><br>
+The experience of identifying and successfully enacting a solution to a problem is called a meaningful experience. Meaningful because through action information is revealed that will remove a specific negative experience from your life. 
+<br><br>
+Because not all problems generate equal amounts of negative experience meaning can vary in potency. Identifying a solution to a life-threatening problem is going to feel more meaningful than finding a new way to brush your teeth. 
+<br><br>
+Information that is revealed by experiences of meaning can generalise. That is to say that knowing the solution to one problem can assist in developing the solution to other problems. Information that is significantly meaningful can reduce systemic risk by reducing the chance of enacting a flawed solution to future problems. 
+<br><br>
+The ability to generalise information from previous meaningful experiences also serves as intellectual capital for interacting with other people. Developing a reputation for competence and clarity will positively integrate you into networks of people. 
+<br><br>
+
+7.
+<br><br>
+Because emotional systems are optimised to the level of the individual, meaningful information is best derived from personal experience. Because uncertainty is always in play it is often best to solve the problems with the highest chance of success first. The information revealed in hindsight will calibrate your technical understanding of reality, increasing the probability you will successfully solve more difficult problems. By engaging in this process you will better calibrate your emotional systems increasing your accuracy in identifying positive and negative experiences. 
+<br><br>
+As you continually solve problems in this manner you will identify meaningful information that integrates well with reality. This information can be synthesised with technical information to solve increasingly complex problems in the manner described in Chapter 4. 
+<br><br>
+It is possible for an individual to solve enough problems that the ratio of positive to negative experience in their life becomes positive to the point of boredom. Signalling that you are ready to interact with new or more complex systems.
+<br><br>
+As your ability to interact with complex systems increases you will find yourself elevated in the hierarchy and increasingly operating on a systemic level. Increasingly you may have to rely on information not derived from personal experience and the outcome of your actions will affect other people, blurring your hindsight. In this position, your ability to identify preferable futures to set reasonable goals becomes fraught with systemic risk. 
+<br><br>
+Remember from Chapter 3. that at a certain scale nature knows to replicate rather than grow. A master of the environment is better off deriving meaningful experiences by starting a family or taking an apprentice in their craft. Diversifying your experience is likely to be more satisfying than to continually scale to the point of collapse. 
+<br><br>
+
+8.
+<br><br>
+A network of individuals living in this manner will grow the economy far better than a central authority acting on flawed information. This is my answer to the scaling limits of hierarchies. Competent individuals acting in line with their emotional incentives are the decentralised source of intelligence and decision-making we require.  
+<br><br>
+
+			</p>
+	</div>
+
+
+
+
+ </p>
+
+
+
+</div>
+</div>	
+<!-- End Article-->
+
+
+<!--About Recreate Meaning-->
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About</h2>
+        <img class="center" src="https://i.imgur.com/01ycE85.png" alt="" >
+        <p>We are trying to empower those who wish to live well through technology assisted problem solving. <a href="https://twitter.com/Recreatemeaning">Read more...</a><br> </p>
+    </div>
+
+
+<!--Popular/Related Posts-->
+    <div class="card">
+      <h3>Popular Posts</h3>
+
+
+
+<a href="https://aaronunify.github.io/RecreateMeaning/NavigatingInstability.html">
+	<div class="container">
+        	<img class="center1" src="https://i.imgur.com/mVb9kPw.png" alt="" >
+			<div class="bottom-left1"><p><strong>Navigating Instability: </strong><br>Preparing for Shortages</p><br></div>
+	</div>
+</a><br>
+
+<a href="https://aaronunify.github.io/RecreateMeaning/OnTheOriginOfIdeas.html">
+	<div class="container">
+       		 <img class="center1" src="https://i.imgur.com/Dc8cUKs.png" alt="" >
+			<div class="bottom-left2"><p><strong>On the Origin of Ideas:</strong><br>Understanding Algorithms</p><br></div>
+	</div>
+</a><br>
+
+
+<a href="https://aaronunify.github.io/RecreateMeaning/TheMoneyProblem.html">
+	<div class="container">
+        	<img class="center1" src="https://i.imgur.com/BXweoV9.png" alt="" >
+			<div class="bottom-left"><p><strong>Solving The Money Problem: </strong><br>The Basics of Financial Strategy</p><br></div>
+	</div>   
+</a><br>
+ </div>
+	   
+<!--Social Media Links -->
+    <div class="card">
+      <h3>Social Media</h3>
+  	<a href="https://twitter.com/Recreatemeaning">Twitter</a><br>
+  	<a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">YouTube</a><br>
+ 	<a href="https://www.reddit.com/user/recreatemeaning">Reddit</a><br>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer --> 
+<div class="footer">
+<div class="navbar">
+ <a href="https://www.recreatemeaning.com/">Home</a>
+  <a href="https://unify.recreatemeaning.com/">Unify</a>
+  <!-- <a href="#news">Mediator</a> -->
+  <a href="https://www.youtube.com/channel/UCot2cYZWOHpbXuvFxoocKTg">Podcast</a>"
+  <a href="https://aaronunify.github.io/RecreateMeaning/About.html" style="float:right">About</a>
+</div>
+</div> 
+
+
+</body>
